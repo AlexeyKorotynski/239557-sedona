@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Алексей Коротынский][https://up.htmlacademy.ru/htmlcss/14/user/239557].
-* Наставник: [Филипп Шамсиев].
+* Студент: [Алексей Коротынский](https://up.htmlacademy.ru/htmlcss/14/user/239557).
+* Наставник: [Филипп Шамсиев](https://htmlacademy.ru/profile/id70260).
 
 ---
 
