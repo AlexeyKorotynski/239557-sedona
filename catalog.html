@@ -7,71 +7,90 @@
 </head>
 
 <body>
+
   <header class="main-header">
     <div class="container">
       <nav class="main-navigation">
-        <ul>
-          <li>информация</li>
-          <li>фото и видео</li>
-          <li>карта штата</li>
-          <li>гостиницы</li>
+        <ul class="main-navigation-list">
+          <li class="main-navigation-list-item">
+            <a href="#">информация</a>
+          </li>
+          <li class="main-navigation-list-item">
+            <a href="#">фото и видео</a>
+          </li>
+          <li class="main-navigation-list-item">
+            <a href="#">карта штата</a>
+          </li>
+          <li class="main-navigation-list-item active">
+            <a href="#">гостиницы</a>
+          </li>
         </ul>
       </nav>
       <div class="logo">
-        <img src="#">
+        <a href="#"></a>
       </div>
   </header>
 
   <main>
+
     <div class="filter">
-      <form action="/echo" method="post" oninput="cost-output.value=range.value">
+      <form action="/echo" method="post">
 
         <div class="checkboxes">
           <ul>
-            <li>
+            <li class="checkboxes-item">
               <h2>ИНФРАСТРУКТУРА:</h2>
             </li>
-            <li>
-              <input type="checkbox" name="pool" checked> БАССЕЙН
+            <li class="checkboxes-item">
+              <input type="checkbox" id="pool" name="pool" checked>
+              <label for="pool">БАССЕЙН</label>
             </li>
-            <li>
-              <input type="checkbox" name="parking"> ПАРКОВКА
+            <li class="checkboxes-item">
+              <input type="checkbox" id="parking" name="parking">
+              <label for="parking">ПАРКОВКА</label>
             </li>
-            <li>
-              <input type="checkbox" name="wi-fi"> WI-FI
+            <li class="checkboxes-item">
+              <input type="checkbox" id="wi-fi" name="wi-fi">
+              <label for="wi-fi">WI-FI</label>
             </li>
           </ul>
         </div>
         <div class="checkboxes">
           <ul>
-            <li>
+            <li class="checkboxes-item">
               <h2>ТИП ЖИЛЬЯ:</h2>
             </li>
-            <li>
-              <input type="checkbox" name="hostel" checked> ГОСТИНИЦА
+            <li class="checkboxes-item">
+              <input type="checkbox" id="hostel" name="hostel" checked>
+              <label for="hostel">ГОСТИНИЦА</label>
             </li>
-            <li>
-              <input type="checkbox" name="motel" checked> МОТЕЛЬ
+            <li class="checkboxes-item">
+              <input type="checkbox" id="motel" name="motel" checked>
+              <label for="motel">МОТЕЛЬ</label>
             </li>
-            <li>
-              <input type="checkbox" name="apartments" checked> АПАРТАМЕНТЫ
+            <li class="checkboxes-item">
+              <input type="checkbox" if="apartments" name="apartments" checked>
+              <label for="apartments">АПАРТАМЕНТЫ</label>
             </li>
           </ul>
         </div>
+
         <div class="cost">
           <h2>Стоимость в сутки (Р):</h2>
-          <input type="range" id="range" name="range" min="0" max="4000" step="100">
-          <output name="cost-output"></output>
+          <div class="from"></div>
+          <div class="before"></div>
+          <div class="range"></div>
+          <bottom>ПОКАЗАТЬ</bottom>
         </div>
-        <a href="#">ПОКАЗАТЬ</a>
-
       </form>
     </div>
     <div class="found">
       <h2>НАЙДЕНО:3</h2>
       <div class="sort">
         <ul>
-          сортировка:
+          <li>
+            сортировка:
+          </li>
           <li>
             <a href="#">по цене</a>
           </li>
@@ -93,56 +112,64 @@
       </div>
     </div>
 
-    <div class="list">
-      <div class="list-item">
-        <img src="#">
-        <div class="content-area">
-          <h2>Amara Resort &amp Spa</h2> гостиница от 3500 Р.
-          <a href="#">ПОДРОБНЕЕ</a>
-          <a href="#">ЗАБРОНИРОВАТЬ</a>
-        </div>
-        <div class="rating">
-          <img src="#">
-          <strong>Рейтинг: 8,5</strong>
-        </div>
-      </div>
-      <div class="list-item">
-        <img src="#">
-        <h2>Desert Quail Inn</h2> мотель от 2000 Р.
+    <div class="list-item">
+      <img src="#">
+      <div class="content-area">
+        <h2>Amara Resort &amp Spa</h2> гостиница от 3500 Р.
         <a href="#">ПОДРОБНЕЕ</a>
         <a href="#">ЗАБРОНИРОВАТЬ</a>
-        <div class="rating">
-          <img src="#">
-          <strong>Рейтинг: 8,9</strong>
-        </div>
       </div>
-      <div class="list-item">
+      <div class="rating">
         <img src="#">
-        <h2>Villas at Poco Diablo</h2> апартаменты от 4000 Р.
-        <a href="#">ПОДРОБНЕЕ</a>
-        <a href="#">ЗАБРОНИРОВАТЬ</a>
-        <div class="rating">
-          <img src="#">
-          <strong>Рейтинг: 9,2</strong>
-        </div>
+        <p>Рейтинг: 8,5</p>
+      </div>
+    </div>
+
+    <div class="list-item">
+      <img src="#">
+      <h2>Desert Quail Inn</h2> мотель от 2000 Р.
+      <a href="#">ПОДРОБНЕЕ</a>
+      <a href="#">ЗАБРОНИРОВАТЬ</a>
+      <div class="rating">
+        <img src="#">
+        <p>Рейтинг: 8,9</p>
+      </div>
+    </div>
+    <div class="list-item">
+      <img src="#">
+      <h2>Villas at Poco Diablo</h2> апартаменты от 4000 Р.
+      <a href="#">ПОДРОБНЕЕ</a>
+      <a href="#">ЗАБРОНИРОВАТЬ</a>
+      <div class="rating">
+        <img src="#">
+        <p>Рейтинг: 9,2</p>
       </div>
     </div>
   </main>
 
   <footer>
     <div class="hash">
-      #visitSEDONA
+      <h2>#visitSEDONA</h2>
     </div>
     <div class="social">
-      <a href="#tw"><img src="#"></a>
-      <a href="#fb"><img src="#"></a>
-      <a href="#yo"><img src="#"></a>
+      <ul>
+        <li class="social-item">
+          <a href="#tw"></a>
+        </li>
+        <li class="social-item">
+          <a href="#fb"></a>
+        </li>
+        <li class="social-item">
+          <a href="#you"></a>
+        </li>
+      </ul>
     </div>
-    <div class="copiright">
-      WEBSITE by
-      <a href="#htmlacademy"><img src="#"></a>
+    <div class="copyright">
+      <p>WEBSITE by</p>
+      <a href="#htmlacademy"></a>
     </div>
   </footer>
+
 </body>
 
 </html>
