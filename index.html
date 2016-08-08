@@ -13,20 +13,20 @@
       <nav class="main-navigation">
         <ul class="main-navigation-list">
           <li class="main-navigation-list-item">
-            <a href="#">информация</a>
+            <a href="#" class="info">информация</a>
           </li>
           <li class="main-navigation-list-item">
-            <a href="#">фото и видео</a>
+            <a href="#" class="media">фото и видео</a>
           </li>
           <li class="main-navigation-list-item">
-            <a href="#">карта штата</a>
+            <a href="#" class="map-state">карта штата</a>
           </li>
           <li class="main-navigation-list-item">
-            <a href="#">гостиницы</a>
+            <a href="#" class="rest">гостиницы</a>
           </li>
         </ul>
       </nav>
-      <div class="logo active">
+      <div class="logo">
         <a href="#"></a>
       </div>
     </div>
@@ -34,12 +34,7 @@
 
   <main>
 
-    <div class="intro">
-      <div class="caption"></div>
-      <div class="line"></div>
-      <div class="subtitle"></div>
-      <div class="slogan"></div>
-    </div>
+    <div class="intro"></div>
 
 
     <div class="sedona-header">
@@ -58,55 +53,54 @@
 
     <div class="sedona-list">
       <div class="sedona-list-item">
-        <div class="sedona-list-item-image"></div>
+        <div class="picture"></div>
         <h2>ЖИЛЬЕ</h2>
         <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
       </div>
       <div class="sedona-list-item">
-        <div class="sedona-list-item-image"></div>
+        <div class="picture"></div>
         <h2>ЕДА</h2>
         <p>Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
       </div>
       <div class="sedona-list-item">
-        <div class="sedona-list-item-image"></div>
+        <div class="picture"></div>
         <h2>СУВЕНИРЫ</h2>
         <p>Не только китайского, но и местного производства!</p>
       </div>
     </div>
 
     <div class="sedona-image-block">
-      <div class="image-block"></div>
       <div class="about-block">
         <h2>ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</h2>
         <p>— №2 —</p>
         <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
       </div>
+      <div class="image-block"></div>
     </div>
 
-    <div class="about-block">
-      <h2>НЕБОЛЬШАЯ ПЛОЩАДЬ</h2>
-      <p>— №3 —</p>
-      <p>ВСЕ достопримеча- тельности находятся очень близко</p>
+    <div class="about-blocks">
+      <div class="about-block gray">
+        <h2>НЕБОЛЬШАЯ ПЛОЩАДЬ</h2>
+        <p>— №3 —</p>
+        <p>ВСЕ достопримеча- тельности находятся очень близко</p>
+      </div>
+      <div class="about-block gray">
+        <h2>КРАСИВАЯ ДОРОГА</h2>
+        <p>— №4 —</p>
+        <p> ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
+      </div>
+      <div class="about-block gray">
+        <h2>МАЛО ТУРИСТОВ</h2>
+        <p>— №5 —</p>
+        <p>Большинство едет в гранд каньон и толпится там</p>
+      </div>
     </div>
-    <div class="about-block">
-      <h2>КРАСИВАЯ ДОРОГА</h2>
-      <p>— №4 —</p>
-      <p> ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
-    </div>
-    <div class="about-block">
-      <h2>МАЛО ТУРИСТОВ</h2>
-      <p>— №5 —</p>
-      <p>Большинство едет в гранд каньон и толпится там</p>
-    </div>
-
 
     <div class="search-form-title">
       <h2>ЗАИНТЕРЕСОВАЛИСЬ?</h2>
       <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложениягостиниц в седоне</p>
-      <button>ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
-    </div>
+      <a href="#">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
 
-    <div class="map">
       <div class="input">
         <form action="/echo" method="post">
 
@@ -122,37 +116,36 @@
             <div class="calendar"></div>
           </div>
 
-          <div class="input-number">
+          <div class="input-date number">
             <label for="adult">ВЗРОСЛЫЕ:</label>
             <input type="number" id="adult">
           </div>
-          <div class="input-number">
+          <div class="input-date number">
             <label for="child">ДЕТИ:</label>
             <input type="number" id="child">
           </div>
-          <button class="input-buttom">НАЙТИ</button>
+          <button type="submit" class="input-buttom">НАЙТИ</button>
         </form>
       </div>
     </div>
+    <div class="map"></div>
   </main>
 
   <footer>
     <div class="hash">
       <h2>#visitSEDONA</h2>
     </div>
-    <div class="social">
-      <ul>
-        <li class="social-item">
-          <a href="#tw"></a>
-        </li>
-        <li class="social-item">
-          <a href="#fb"></a>
-        </li>
-        <li class="social-item">
-          <a href="#you"></a>
-        </li>
-      </ul>
-    </div>
+    <ul class="social-list">
+      <li class="social-list-item">
+        <a href="#tw" class="twitter"></a>
+      </li>
+      <li class="social-list-item">
+        <a href="#fb" class="facebook"></a>
+      </li>
+      <li class="social-list-item">
+        <a href="#you" class="youtube"></a>
+      </li>
+    </ul>
     <div class="copyright">
       <p>WEBSITE by</p>
       <a href="#htmlacademy"></a>
