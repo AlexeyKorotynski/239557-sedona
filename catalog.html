@@ -13,21 +13,21 @@
       <nav class="main-navigation">
         <ul class="main-navigation__list">
           <li class="main-navigation__item">
-            <a href="#" class="main-navigation__link">информация</a>
+            <a class="main-navigation__link" href="#">информация</a>
           </li>
           <li class="main-navigation__item">
-            <a href="#" class="main-navigation__link">фото и видео</a>
+            <a class="main-navigation__link" href="#">фото и видео</a>
           </li>
           <li class="main-navigation__item">
-            <a href="#" class="main-navigation__link">карта штата</a>
+            <a class="main-navigation__link" href="#">карта штата</a>
           </li>
           <li class="main-navigation__item main-navigation__item--active">
-            <a href="#" class="main-navigation__link">гостиницы</a>
+            <a class="main-navigation__link" href="#">гостиницы</a>
           </li>
         </ul>
       </nav>
-      <div class="main-navigation__logo">
-        <a href="#" class="main-navigation__link"></a>
+      <div class="logo">
+        <a class="logo__link" href="#"></a>
       </div>
 
     </header>
@@ -36,130 +36,130 @@
 
       <div class="filter">
         <form action="/echo" method="post">
-          <div class="checkboxes">
-            <ul class="checkboxes__list">
-              <li class="checkboxes__item">
-                <h2 class="checkboxes__caption">ИНФРАСТРУКТУРА:</h2>
-              </li>
-              <li class="checkboxes__item">
-                <input type="checkbox" id="pool" name="pool" class="checkboxes__input" checked>
-                <label for="pool" class="checkboxes__label">БАССЕЙН</label>
-              </li>
-              <li class="checkboxes__item">
-                <input type="checkbox" id="parking" name="parking" class="checkboxes__input">
-                <label for="parking" class="checkboxes__label">ПАРКОВКА</label>
-              </li>
-              <li class="checkboxes__item">
-                <input type="checkbox" id="wi-fi" name="wi-fi" class="checkboxes__input">
-                <label for="wi-fi" class="checkboxes__label">WI-FI</label>
-              </li>
-            </ul>
-          </div>
-          <div class="checkboxes">
-            <ul class="checkboxes__list">
-              <li class="checkboxes__item">
-                <h2 class="checkboxes__caption">ТИП ЖИЛЬЯ:</h2>
-              </li>
-              <li class="checkboxes__item">
-                <input type="checkbox" id="hostel" name="hostel" class="checkboxes__input" checked>
-                <label for="hostel" class="checkboxes__label">ГОСТИНИЦА</label>
-              </li>
-              <li class="checkboxes__item">
-                <input type="checkbox" id="motel" name="motel" class="checkboxes__input" checked>
-                <label for="motel" class="checkboxes__label">МОТЕЛЬ</label>
-              </li>
-              <li class="checkboxes__item">
-                <input type="checkbox" id="apartments" name="apartments" class="checkboxes__input" checked>
-                <label for="apartments" class="checkboxes__label">АПАРТАМЕНТЫ</label>
-              </li>
-            </ul>
-          </div>
+
+          <ul class="checkboxes-list">
+            <li class="checkboxes-list__item">
+              <h2 class="checkboxes-list__caption">ИНФРАСТРУКТУРА:</h2>
+            </li>
+            <li class="checkboxes-list__item">
+              <input class="checkboxes-list__input" type="checkbox" id="pool" name="pool" checked>
+              <label class="checkboxes-list__label" for="pool">БАССЕЙН</label>
+            </li>
+            <li class="checkboxes-list__item">
+              <input class="checkboxes-list__input" type="checkbox" id="parking" name="parking">
+              <label class="checkboxes-list__label" for="parking">ПАРКОВКА</label>
+            </li>
+            <li class="checkboxes-list__item">
+              <input class="checkboxes-list__input" type="checkbox" id="wi-fi" name="wi-fi">
+              <label class="checkboxes-list__label" for="wi-fi">WI-FI</label>
+            </li>
+          </ul>
+
+
+          <ul class="checkboxes-list__list">
+            <li class="checkboxes-list__item">
+              <h2 class="checkboxes-list__caption">ТИП ЖИЛЬЯ:</h2>
+            </li>
+            <li class="checkboxes-list__item">
+              <input class="checkboxes-list__input" type="checkbox" id="hostel" name="hostel" checked>
+              <label class="checkboxes-list__label" for="hostel">ГОСТИНИЦА</label>
+            </li>
+            <li class="checkboxes-list__item">
+              <input class="checkboxes-list__input" type="checkbox" id="motel" name="motel" checked>
+              <label class="checkboxes-list__label" for="motel">МОТЕЛЬ</label>
+            </li>
+            <li class="checkboxes-list__item">
+              <input class="checkboxes-list__input" type="checkbox" id="apartments" name="apartments" checked>
+              <label class="checkboxes-list__label" for="apartments">АПАРТАМЕНТЫ</label>
+            </li>
+          </ul>
+
           <div class="cost">
             <h2 class="cost__caption">Стоимость в сутки (Р):</h2>
-            <div class="cost__table cost__from">ОТ 0</div>
-            <div class="cost__table cost__before">ДО 3000</div>
+            <div class="cost__table cost__table--from">ОТ 0</div>
+            <div class="cost__table cost__table--to">ДО 3000</div>
             <div class="cost__range"></div>
-            <button type="submit" class="cost__button">ПОКАЗАТЬ</button>
+            <button class="cost__button" type="submit">ПОКАЗАТЬ</button>
           </div>
         </form>
       </div>
 
       <div class="found">
         <h2 class="found__caption">НАЙДЕНО:3</h2>
-        <ul class="found__list">
-          <li class="found__item">
-            <p class="found__text">сортировка:</p>
+        <ul class="found-list">
+          <li class="found-list__item">
+            <p class="found-list__text">сортировка:</p>
           </li>
-          <li class=" found__item">
-            <a href="#" class="found__link">по цене</a>
+          <li class=" found-list__item">
+            <a class="found-list__link" href="#">по цене</a>
           </li>
-          <li class="found__item">
-            <a href="#" class="found__link">по типу</a>
+          <li class="found-list__item">
+            <a class="found-list__link" href="#">по типу</a>
           </li>
-          <li class="found__item">
-            <a href="#" class="found__link">по рейтингу</a>
+          <li class="found-list__item">
+            <a class="found-list__link" href="#">по рейтингу</a>
           </li>
         </ul>
-        <div class="found__arrows">
-          <a href="#" class="found__link"></a>
-          <a href="#" class="found__link"></a>
+        <div class="found-arrows">
+          <a class="found-arrows__link" href="#"></a>
+          <a class="found-arrows__link" href="#"></a>
         </div>
       </div>
 
       <div class="list-item">
-        <div class="list-item__image "></div>
+        <div class="list-item-image"></div>
         <div class="content-area">
           <h2 class="content-area__caption">Amara Resort & Spa</h2>
-          <div class="list-item__about ">
-            <p class="list-item__description">гостиница</p>
-            <a href="#" class="list-item__link">ПОДРОБНЕЕ</a>
+          <div class="about">
+            <p class="about__description">гостиница</p>
+            <a class="about__link" href="#">ПОДРОБНЕЕ</a>
           </div>
-          <div class="list-item__about">
-            <p class="list-item__description">от 3500 Р.</p>
-            <a href="#" class="list-item__link list-item__link--brown">ЗАБРОНИРОВАТЬ</a>
+          <div class="about">
+            <p class="about__description">от 3500 Р.</p>
+            <a class="about__link about__link--brown" href="#">ЗАБРОНИРОВАТЬ</a>
           </div>
-          <div class="list-item__status">
-            <div class="list-item__stars"></div>
-            <p class="list-item__rating">Рейтинг: 8,5</p>
+          <div class="status">
+            <div class="status__stars"></div>
+            <p class="status__rating">Рейтинг: 8,5</p>
           </div>
         </div>
       </div>
 
 
       <div class="list-item">
-        <div class="list-item__image "></div>
+        <div class="list-item-image"></div>
         <div class="content-area">
           <h2 class="content-area__caption">Desert Quail Inn</h2>
-          <div class="list-item__about">
-            <p class="list-item__description">мотель</p>
-            <a href="#" class="list-item__link">ПОДРОБНЕЕ</a>
+          <div class="about">
+            <p class="about__description">мотель</p>
+            <a class="about__link" href="#">ПОДРОБНЕЕ</a>
           </div>
-          <div class="list-item__about">
-            <p class="list-item__description">от 2000 Р.</p>
-            <a href="#" class="list-item__link list-item__link--brown">ЗАБРОНИРОВАТЬ</a>
+          <div class="about">
+            <p class="about__description">от 2000 Р.</p>
+            <a class="about__link about__link--brown" href="#">ЗАБРОНИРОВАТЬ</a>
           </div>
-          <div class="list-item__status">
-            <div class="list-item__stars"></div>
-            <p class="list-item__rating">Рейтинг: 8,9</p>
+          <div class="status">
+            <div class="status__stars"></div>
+            <p class="status__rating">Рейтинг: 8,9</p>
           </div>
         </div>
       </div>
 
       <div class="list-item">
-        <div class="list-item__image"></div>
+        <div class="list-item-image"></div>
         <div class="content-area">
           <h2 class="content-area__caption">Villas at Poco Diablo</h2>
-          <div class="list-item__about">
-            <p class="list-item__description">апартаменты</p>
-            <a href="#" class="list-item__link">ПОДРОБНЕЕ</a>
+          <div class="about">
+            <p class="about__description">апартаменты</p>
+            <a class="about__link" href="#">ПОДРОБНЕЕ</a>
           </div>
-          <div class="list-item__about">
-            <p class="list-item__description">от 4000 Р.</p>
-            <a href="#" class="list-item__link list-item__link--brown">ЗАБРОНИРОВАТЬ</a>
+          <div class="about">
+            <p class="about__description">от 4000 Р.</p>
+            <a class="about__link about__link--brown" href="#">ЗАБРОНИРОВАТЬ</a>
           </div>
-          <div class="list-item__status">
-            <div class="list-item__stars"></div>
-            <p class="list-item__rating">Рейтинг: 9,2</p>
+          <div class="status">
+            <div class="status__stars"></div>
+            <p class="status__rating">Рейтинг: 9,2</p>
           </div>
         </div>
       </div>
@@ -167,23 +167,23 @@
     </main>
 
     <footer class="footer">
-      <div class="footer__hash">
-        <h2 class="footer__hash__caption">#visitSEDONA</h2>
+      <div class="footer-hash">
+        <h2 class="footer-hash__caption">#visitSEDONA</h2>
       </div>
       <ul class="social-list">
         <li class="social-list__item">
-          <a href="#tw" class="social-list__link"></a>
+          <a class="social-list__link" href="#"></a>
         </li>
         <li class="social-list__item">
-          <a href="#fb" class="social-list__link"></a>
+          <a class="social-list__link" href="#"></a>
         </li>
         <li class="social-list__item">
-          <a href="#you" class="social-list__link"></a>
+          <a class="social-list__link" href="#"></a>
         </li>
       </ul>
       <div class="copyright">
-        <p class="copyright_description">WEBSITE by</p>
-        <a href="#htmlacademy" class="copyright_link"></a>
+        <p class="copyright__description">WEBSITE by</p>
+        <a class="copyright__link" href="#"></a>
       </div>
     </footer>
   </div>

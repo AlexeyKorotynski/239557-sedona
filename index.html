@@ -12,21 +12,21 @@
       <nav class="main-navigation">
         <ul class="main-navigation__list">
           <li class="main-navigation__item">
-            <a href="#" class="main-navigation__link">информация</a>
+            <a class="main-navigation__link" href="#">информация</a>
           </li>
           <li class="main-navigation__item">
-            <a href="#" class="main-navigation__link">фото и видео</a>
+            <a class="main-navigation__link" href="#">фото и видео</a>
           </li>
           <li class="main-navigation__item">
-            <a href="#" class="main-navigation__link">карта штата</a>
+            <a class="main-navigation__link" href="#">карта штата</a>
           </li>
           <li class="main-navigation__item">
-            <a href="#" class="main-navigation__link">гостиницы</a>
+            <a class="main-navigation__link" href="#">гостиницы</a>
           </li>
         </ul>
       </nav>
       <div class="logo">
-        <a href="#" class="logo__link"></a>
+        <a class="logo__link" href="#"></a>
       </div>
     </header>
 
@@ -46,24 +46,24 @@
           <p class="about-block__number">— №1 —</p>
           <p class="about-block__decription">СЕДОНА — НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
         </div>
-        <div class="sedona-image-block__img"></div>
+        <div class="sedona-block-img"></div>
       </div>
 
       <div class="sedona-list">
-        <div class="sedona-list__item">
-          <div class="sedona-list__picture"></div>
-          <h2 class="sedona-list__caption">ЖИЛЬЕ</h2>
-          <p class="sedona-list__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+        <div class="sedona-list-item">
+          <div class="sedona-list-item__picture"></div>
+          <h2 class="sedona-list-item__caption">ЖИЛЬЕ</h2>
+          <p class="sedona-list-item__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
         </div>
         <div class="sedona-list-item">
-          <div class="sedona-list__picture"></div>
-          <h2 class="sedona-list__caption">ЕДА</h2>
-          <p class="sedona-list__description">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
+          <div class="sedona-list-item__picture"></div>
+          <h2 class="sedona-list-item__caption">ЕДА</h2>
+          <p class="sedona-list-item__description">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
         </div>
         <div class="sedona-list-item">
-          <div class="sedona-list__picture"></div>
-          <h2 class="sedona-list__caption">СУВЕНИРЫ</h2>
-          <p class="sedona-list__description">Не только китайского, но и местного производства!</p>
+          <div class="sedona-list-item__picture"></div>
+          <h2 class="sedona-list-item__caption">СУВЕНИРЫ</h2>
+          <p class="sedona-list-item__description">Не только китайского, но и местного производства!</p>
         </div>
       </div>
 
@@ -73,7 +73,7 @@
           <p class="about-block__number">— №2 —</p>
           <p class="about-block__decription">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
         </div>
-        <div class="sedona-image-block__img"></div>
+        <div class="sedona-block-img"></div>
       </div>
 
       <div class="about-blocks">
@@ -97,33 +97,34 @@
       <div class="search-form">
         <h2 class="search-form__caption">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
         <p class="search-form__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложениягостиниц в седоне</p>
-        <a href="#" class="search-form__link">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
+        <a class="search-form__link" href="#">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
 
         <div class="input">
           <form action="/echo" method="post">
 
             <div class="input-data">
-              <label for="in" class="input-data__label">ДАТА ЗАЕЗДА:</label>
-              <input type="date" id="in" class="input-data__input">
+              <label class="input-data__label" for="in">ДАТА ЗАЕЗДА:</label>
+              <input class="input-data__input" type="date" id="in">
               <div class="input-data__img"></div>
             </div>
 
             <div class="input-data">
-              <label for="out" class="input-data__label">ДАТА ЗАЕЗДА:</label>
-              <input type="date" id="out" class="input-data__input">
+              <label class="input-data__label" for="out">ДАТА ЗАЕЗДА:</label>
+              <input class="input-data__input" type="date" id="out">
               <div class="input-data__img"></div>
             </div>
 
             <div class="input-data input-data--number">
-              <label for="adult" class="input-data__label">ВЗРОСЛЫЕ:</label>
-              <input type="number" id="adult" class="input-data__input">
+              <label class="input-data__label" for="adult">ВЗРОСЛЫЕ:</label>
+              <input class="input-data__input" type="number" id="adult">
             </div>
 
             <div class="input-data input-data--number">
-              <label for="child" class="input-data__label">ДЕТИ:</label>
-              <input type="number" id="child" class="input-data__input">
+              <label class="input-data__label" for="child">ДЕТИ:</label>
+              <input class="input-data__input" type="number" id="child">
             </div>
-            <button type="submit" class="input__button">НАЙТИ</button>
+
+            <button class="input__button" type="submit">НАЙТИ</button>
           </form>
         </div>
       </div>
@@ -131,23 +132,23 @@
     </main>
 
     <footer class="footer">
-      <div class="footer__hash">
-        <h2 class="footer__hash__caption">#visitSEDONA</h2>
+      <div class="footer-hash">
+        <h2 class="footer-hash__caption">#visitSEDONA</h2>
       </div>
       <ul class="social-list">
         <li class="social-list__item">
-          <a href="#tw" class="social-list__link"></a>
+          <a class="social-list__link" href="#tw"></a>
         </li>
         <li class="social-list__item">
-          <a href="#fb" class="social-list__link"></a>
+          <a class="social-list__link" href="#fb"></a>
         </li>
         <li class="social-list__item">
-          <a href="#you" class="social-list__link"></a>
+          <a class="social-list__link" href="#you"></a>
         </li>
       </ul>
       <div class="copyright">
-        <p class="copyright_description">WEBSITE by</p>
-        <a href="#htmlacademy" class="copyright_link"></a>
+        <p class="copyright__description">WEBSITE by</p>
+        <a class="copyright__link" href="#htmlacademy"></a>
       </div>
     </footer>
   </div>
