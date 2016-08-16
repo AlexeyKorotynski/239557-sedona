@@ -1,0 +1,68 @@
+body {
+
+font-family:PT Sans, sans-serif;
+font-size: 14px;
+line-height: 26px;
+}
+
+.main-navigation__link {
+
+font-weight: bold;
+text-decoration: none;
+}
+
+.main-navigation__list {
+
+  list-style: none;
+}
+
+h2 {
+
+  font-size: 21px;
+  font-weight: bold;
+}
+
+h3 {
+
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.search-form__caption {
+
+  font-size: 30px;
+}
+
+.input-data__label {
+
+  font-weight: bold;
+}
+
+.footer-hash__caption {
+  line-height: normal;
+}
+
+.sedona-image-block .about-block, .filter, .search-form__caption, .about__link {
+
+  color: #ffffff;
+}
+
+.about__link {
+
+  font-weight: bold;
+}
+
+.found-list {
+
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.cost__caption {
+
+  line-height: normal;
+}
+
+.filter {
+  background: url("../img/background.jpg") no-repeat;
+}

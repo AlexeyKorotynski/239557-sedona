@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Каталог</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -13,21 +14,23 @@
       <nav class="main-navigation">
         <ul class="main-navigation__list">
           <li class="main-navigation__item">
-            <a class="main-navigation__link" href="#">информация</a>
+            <a class="main-navigation__link" href="#">ИНФОРМАЦИЯ</a>
           </li>
           <li class="main-navigation__item">
-            <a class="main-navigation__link" href="#">фото и видео</a>
+            <a class="main-navigation__link" href="#">ФОТО И ВИДЕО</a>
           </li>
           <li class="main-navigation__item">
-            <a class="main-navigation__link" href="#">карта штата</a>
+            <a class="main-navigation__link" href="#">КАРТА ШТАТА</a>
           </li>
           <li class="main-navigation__item main-navigation__item--active">
-            <a class="main-navigation__link" href="#">гостиницы</a>
+            <a class="main-navigation__link" href="#">ГОСТИНИЦЫ</a>
           </li>
         </ul>
       </nav>
       <div class="logo">
-        <a class="logo__link" href="#"></a>
+        <a class="logo__link" href="#">
+          <img class="logo__img" src="img/logo.png" alt="logo" width="138" height="70">
+        </a>
       </div>
 
     </header>
@@ -39,7 +42,7 @@
 
           <ul class="checkboxes-list">
             <li class="checkboxes-list__item">
-              <h2 class="checkboxes-list__caption">ИНФРАСТРУКТУРА:</h2>
+              <h3 class="checkboxes-list__caption">ИНФРАСТРУКТУРА:</h3>
             </li>
             <li class="checkboxes-list__item">
               <input class="checkboxes-list__input" type="checkbox" id="pool" name="pool" checked>
@@ -58,7 +61,7 @@
 
           <ul class="checkboxes-list">
             <li class="checkboxes-list__item">
-              <h2 class="checkboxes-list__caption">ТИП ЖИЛЬЯ:</h2>
+              <h3 class="checkboxes-list__caption">ТИП ЖИЛЬЯ:</h3>
             </li>
             <li class="checkboxes-list__item">
               <input class="checkboxes-list__input" type="checkbox" id="hostel" name="hostel" checked>
@@ -75,7 +78,7 @@
           </ul>
 
           <div class="cost">
-            <h2 class="cost__caption">Стоимость в сутки (Р):</h2>
+            <h3 class="cost__caption">СТОИМОСТЬ В СУТКИ (Р):</h3>
             <div class="cost__table">ОТ 0</div>
             <div class="cost__table">ДО 3000</div>
             <div class="cost__range"></div>
@@ -88,16 +91,16 @@
         <h2 class="found__caption">НАЙДЕНО:3</h2>
         <ul class="found-list">
           <li class="found-list__item">
-            <p class="found-list__text">сортировка:</p>
+            <p class="found-list__text">СОРТИРОВКА:</p>
           </li>
           <li class=" found-list__item">
-            <a class="found-list__link" href="#">по цене</a>
+            <a class="found-list__link" href="#">ПО ЦЕНЕ</a>
           </li>
           <li class="found-list__item">
-            <a class="found-list__link" href="#">по типу</a>
+            <a class="found-list__link" href="#">ПО ТИПУ</a>
           </li>
           <li class="found-list__item">
-            <a class="found-list__link" href="#">по рейтингу</a>
+            <a class="found-list__link" href="#">ПО РЕЙТИНГУ</a>
           </li>
         </ul>
         <div class="found-arrows">
@@ -107,31 +110,35 @@
       </div>
 
       <div class="list-item">
-        <div class="list-item-image"></div>
+        <div class="list-item-image">
+          <img class="list-item-image__img" src="img/hotel_1.jpg" alt="1" width="135" height="90">
+        </div>
         <div class="content-area">
-          <h2 class="content-area__caption">Amara Resort & Spa</h2>
+          <h2 class="content-area__caption">AMARA RESORT & SPA</h2>
           <div class="about">
-            <p class="about__description">гостиница</p>
+            <p class="about__description">ГОСТИНИЦА</p>
             <a class="about__link" href="#">ПОДРОБНЕЕ</a>
           </div>
           <div class="about">
-            <p class="about__description">от 3500 Р.</p>
+            <p class="about__description">ОТ 3500 Р.</p>
             <a class="about__link about__link--brown" href="#">ЗАБРОНИРОВАТЬ</a>
           </div>
           <div class="status">
             <div class="status__stars"></div>
-            <p class="status__rating">Рейтинг: 8,5</p>
+            <p class="status__rating">РУЙТИНГ: 8,5</p>
           </div>
         </div>
       </div>
 
 
       <div class="list-item">
-        <div class="list-item-image"></div>
+        <div class="list-item-image">
+          <img class="list-item-image__img" src="img/hotel_2.jpg" alt="2" width="135" height="90">
+        </div>
         <div class="content-area">
-          <h2 class="content-area__caption">Desert Quail Inn</h2>
+          <h2 class="content-area__caption">DESERT QUAIL INN</h2>
           <div class="about">
-            <p class="about__description">мотель</p>
+            <p class="about__description">МОТЕЛЬ</p>
             <a class="about__link" href="#">ПОДРОБНЕЕ</a>
           </div>
           <div class="about">
@@ -140,17 +147,19 @@
           </div>
           <div class="status">
             <div class="status__stars"></div>
-            <p class="status__rating">Рейтинг: 8,9</p>
+            <p class="status__rating">РЕЙТИНГ: 8,9</p>
           </div>
         </div>
       </div>
 
       <div class="list-item">
-        <div class="list-item-image"></div>
+        <div class="list-item-image">
+          <img class="list-item-image__img" src="img/hotel_3.jpg" alt="3" width="135" height="90">
+        </div>
         <div class="content-area">
-          <h2 class="content-area__caption">Villas at Poco Diablo</h2>
+          <h2 class="content-area__caption">VILLAS AT POCO DIABLO</h2>
           <div class="about">
-            <p class="about__description">апартаменты</p>
+            <p class="about__description">АПАРТАМЕНТЫ</p>
             <a class="about__link" href="#">ПОДРОБНЕЕ</a>
           </div>
           <div class="about">
@@ -159,7 +168,7 @@
           </div>
           <div class="status">
             <div class="status__stars"></div>
-            <p class="status__rating">Рейтинг: 9,2</p>
+            <p class="status__rating">РЕЙТИНГ: 9,2</p>
           </div>
         </div>
       </div>
@@ -168,7 +177,7 @@
 
     <footer class="footer">
       <div class="footer-hash">
-        <h2 class="footer-hash__caption">#visitSEDONA</h2>
+        <h2 class="footer-hash__caption">#VISITSEDONA</h2>
       </div>
       <ul class="social-list">
         <li class="social-list__item">
@@ -182,8 +191,10 @@
         </li>
       </ul>
       <div class="copyright">
-        <p class="copyright__description">WEBSITE by</p>
-        <a class="copyright__link" href="#"></a>
+        <p class="copyright__description">WEBSITE BY</p>
+        <a class="copyright__link" href="#">
+          <img class="copyright__img" src="img/html_academy.png" alt="html" width="113" height="39">
+        </a>
       </div>
     </footer>
   </div>
