@@ -1,5 +1,4 @@
 body {
-
 font-family:PT Sans, Arial, sans-serif;
 font-size: 14px;
 line-height: 26px;
@@ -7,130 +6,111 @@ font-weight: normal;
 }
 
 .main-navigation__link {
-
 font-weight: bold;
 text-decoration: none;
 }
 
 .main-navigation__list {
-
   list-style: none;
 }
 
 h2 {
-
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
 }
 
 .about-block__caption {
-
   font-size: 21px;
   line-height: 21px;
   font-weight: bold;
 }
 
 .about-block__decription {
-
   font-size: 14px;
   line-height: 21px;
   font-weight: normal;
 }
 
 .sedona-list-item__caption {
-
   font-size: 21px;
   line-height: 21px;
   font-weight: bold;
 }
 
 .search-form__description {
-
   font-size: 14px;
   line-height: 24px;
   font-weight: normal;
 }
 
 .sedona-list-item__description {
-
   font-size: 14px;
   line-height: 21px;
   font-weight: normal;
 }
 
 .search-form__link {
-
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
 }
 
 .input__button {
-
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
 }
 
 .search-form__caption {
-
   font-size: 30px;
   line-height: 24px;
   font-weight: bold;
 }
 
 .input-data__label {
-
   font-size: 14px;
   line-height: 26px;
   font-weight: bold;
 }
 
 .about__link {
-
   font-size: 14px;
   line-height: 21px;
   font-weight: bold;
 }
 
 .checkboxes-list__caption {
-
   font-size: 16px;
   line-height: 21px;
   font-weight: bold;
 }
 
 .found-list {
-
   font-size: 12px;
   line-height: 18px;
   font-weight: normal;
 }
 
 .cost__button {
-
   font-size: 14px;
   line-height: 21px;
   font-weight: normal;
 }
 
 .about {
-
   font-size: 14px;
   line-height: 21px;
   font-weight: normal;
 }
 
 .status__rating {
-
   font-size: 14px;
   line-height: 21px;
   font-weight: normal;
 }
 
 .cost__caption {
-
   font-size: 16px;
   line-height: 21px;
   font-weight: bold;
@@ -149,16 +129,12 @@ h2 {
 }
 
 .food:before {
-  content: "";
-  display: block;
   width:75px;
   height:72px;
   background: url("../img/item_2.png") no-repeat;
 }
 
 .souvenirs:before {
-  content: "";
-  display: block;
   width:64px;
   height:76px;
   background: url("../img/item_3.png") no-repeat;
@@ -172,16 +148,13 @@ h2 {
 }
 
 .social-list__link {
-
   background: url("../img/social_2.png") no-repeat #81b3d2;
 }
 
 li:first-child .social-list__link {
-
   background: url("../img/social_1.png") no-repeat #81b3d2;
 }
 
 li:last-child .social-list__link {
-
   background: url("../img/social_3.png") no-repeat #81b3d2;
 }
