@@ -139,3 +139,49 @@ h2 {
 .filter {
   background: url("../img/background.jpg") no-repeat;
 }
+
+ .sedona-list-item:before {
+  content: "";
+  display: block;
+  width:74px;
+  height:70px;
+  background: url("../img/item_1.png") no-repeat;
+}
+
+.food:before {
+  content: "";
+  display: block;
+  width:75px;
+  height:72px;
+  background: url("../img/item_2.png") no-repeat;
+}
+
+.souvenirs:before {
+  content: "";
+  display: block;
+  width:64px;
+  height:76px;
+  background: url("../img/item_3.png") no-repeat;
+}
+
+ .social-list__link {
+  content: "";
+  display: block;
+  width:46px;
+  height:46px;
+}
+
+.social-list__link {
+
+  background: url("../img/social_2.png") no-repeat #81b3d2;
+}
+
+li:first-child .social-list__link {
+
+  background: url("../img/social_1.png") no-repeat #81b3d2;
+}
+
+li:last-child .social-list__link {
+
+  background: url("../img/social_3.png") no-repeat #81b3d2;
+}
