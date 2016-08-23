@@ -5,16 +5,12 @@ line-height: 26px;
 font-weight: normal;
 }
 
-/*.container {
-background: blue;
-}*/
-
 .main-navigation__link {
 font-weight: bold;
 text-decoration: none;
 }
 
-.main-navigation__list {
+ul {
   list-style: none;
 }
 
@@ -124,7 +120,7 @@ h2 {
   background: url("../img/background.jpg") no-repeat;
 }
 
- .sedona-list-item:before {
+ .sedona-list-item::before {
   content: "";
   display: block;
   width:74px;
@@ -132,13 +128,13 @@ h2 {
   background: url("../img/item_1.png") no-repeat;
 }
 
-.food:before {
+.food::before {
   width:75px;
   height:72px;
   background: url("../img/item_2.png") no-repeat;
 }
 
-.souvenirs:before {
+.souvenirs::before {
   width:64px;
   height:76px;
   background: url("../img/item_3.png") no-repeat;

@@ -1,165 +1,144 @@
+body {
+  width: 1280px;
+}
 
+.container {
+  width: 1200px;
+  margin:  0 auto;
+}
+
+.main-header {
+  position: relative;
+}
+
+.main-navigation__list {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  margin-bottom: 0;
+}
 
 .main-navigation__item {
-  display: block;
-}
-
-.main-navigation__item--left {
-  float: left;
-}
-
-.main-navigation__item--right {
-  float: right;
+  width: 150px;
+  min-height: 55px;
 }
 
 .logo {
   position: absolute;
-  left:50%;
-  margin-right: 70px;
-  z-index: 20;
+  left: 530px;
+  top: 0;
+  z-index: 2;
 }
 
 .image {
-  position: relative;
-  margin-bottom: 30px;
+  height: 510px;
+  overflow: hidden;
 }
 
-.image__background {
-  width: 100%;
-}
+.image::after {
+  display: block;
+  height: 57px;
+  background: url("img/mountains_footer.png") no-repeat;
 
-.image__footer {
-  width: 100%;
-  position: absolute;
-  bottom:3px;
 }
 
 .sedona-header {
   text-align: center;
-  vertical-align: middle;
-  margin-right: auto;
-  margin-left: auto;
-  width:500px;
-  margin-bottom: 55px;
-}
-
-.sedona-header__caption {
-  margin-bottom: 35px;
+  margin-bottom: 60px;
 }
 
 .sedona-image-block {
-  width: 100%;
-  background-color: red;
-  margin-bottom: 45px;
+  display: flex;
 }
 
 .about-block {
-  display: block;
-  background-color: blue;
-  width: 33%;
-  float: left;
   text-align: center;
-  vertical-align: middle;
-  padding-top: 45px;
-  padding-bottom: 45px;
+  display: block;
+  width: 400px;
+  padding-top: 50px;
+  padding-bottom: 55px;
 }
 
-.about-block__decription {
-  width: 180px;
-  margin:  0 auto;
+.about-block__caption {
+  margin-bottom: 00px;
+}
+
+.about-block__number {
+  margin-bottom: 30px;
 }
 
 .sedona-block-img {
+  width: 800px;
   display: block;
-  float: left;
-  width: 67%;
 }
 
-.clearfix {
-  clear: both;
-  height: 0;
-}
-
-.sedona-block-img__img {
-  width: 100%;
-}
-
-.about-block {
-  display: block;
-  float: left;
+.sedona-list {
+  display: flex;
 }
 
 .sedona-list-item {
-  display:block;
-  float: left;
-  margin-right: 60px;
   text-align: center;
-  vertical-align: middle;
-  width: 30%;
+  margin-right: 20px;
+  padding-bottom: 90px;
+  padding-top: 60px;
 }
 
 .sedona-list-item__description {
-  width: 160px;
+  margin-bottom: 0;
+}
+
+.sedona-list-item:first-child {
+  width: 255px;
+  margin-left: 75px;
+  margin-right: 130px;
+}
+
+.sedona-list-item:nth-child(2) {
+  width: 290px;
+  margin-right:120px;
+}
+
+.sedona-list-item:last-child {
+  width: 275px;
+}
+
+.sedona-list-item::before {
   margin: 0 auto;
 }
 
-.sedona-list-item__description:nth-child(2) {
-  width: 155px;
-  margin: 0 auto;
-}
-
-.sedona-list-item__description:last-child {
-  width: 165px;
-  margin: 0 auto;
-}
-
-.sedona-list-item:before {
-  margin:  0 auto;
+.about-blocks {
+  display: flex;
 }
 
 .search-form {
   text-align: center;
 }
 
-.search-form__description {
-  width: 440px;
-  margin: auto;
-  margin-bottom: 50px;
-}
-
 .input {
   width: 570px;
-  margin: auto;
+  margin: 0 auto;
+  padding-top: 55px;
 }
 
-.input-data--number {
-  float: left;
-}
-
-.footer-hash {
-  float: left;
-  width: 33%;
+.footer {
+  display: flex;
 }
 
 .social-list {
-  float: left;
-  width: 33%;
+  display: flex;
+  justify-content:center;
+  width: 400px;
+  margin-right: 90px;
 }
 
-.social-list__item {
-  float: left;
+.footer-hash {
+  width: 240px;
+  text-align: center;
+  margin-left: 70px;
+  margin-right: 90px;
 }
 
 .copyright {
-  float: left;
-  width: 33%;
-}
-
-.copyright__description {
-  float: left;
-  margin-right: 5px;
-}
-
-.copyright__link{
-  float: left;
+  width: 240px;
+  justify-content:center;
 }
