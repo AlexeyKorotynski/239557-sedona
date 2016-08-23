@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <link href="css/style.css" rel="stylesheet">
+  <link href="css/index.css" rel="stylesheet">
 </head>
 
 <body>
@@ -12,16 +13,16 @@
     <header class="main-header">
       <nav class="main-navigation">
         <ul class="main-navigation__list">
-          <li class="main-navigation__item">
+          <li class="main-navigation__item main-navigation__item--left">
             <a class="main-navigation__link" href="#">ИНФОРМАЦИЯ</a>
           </li>
-          <li class="main-navigation__item">
+          <li class="main-navigation__item main-navigation__item--left">
             <a class="main-navigation__link" href="#">ФОТО И ВИДЕО</a>
           </li>
-          <li class="main-navigation__item">
+          <li class="main-navigation__item main-navigation__item--right">
             <a class="main-navigation__link" href="#">КАРТА ШТАТА</a>
           </li>
-          <li class="main-navigation__item">
+          <li class="main-navigation__item main-navigation__item--right">
             <a class="main-navigation__link" href="#">ГОСТИНИЦЫ</a>
           </li>
         </ul>
@@ -36,8 +37,7 @@
     <main>
 
       <div class="image">
-        <img class="image__background" src="img/mountains.jpg" alt="mountains">
-        <img class="image__description" src="img/welcome.png" alt="welcome" width="458" height="352">
+        <img class="image__background" src="img/welcome.jpg" alt="mountains" height="512" width="768">
         <img class="image__footer" src="img/mountains_footer.png">
       </div>
 
@@ -56,6 +56,7 @@
         <div class="sedona-block-img">
           <img class="sedona-block-img__img" src="img/n1.jpg" alt="sity" width="512" height="256">
         </div>
+        <div class="clearfix"></div>
       </div>
 
       <div class="sedona-list">
@@ -71,6 +72,7 @@
           <h2 class="sedona-list-item__caption">СУВЕНИРЫ</h2>
           <p class="sedona-list-item__description">НЕ ТОЛЬКО КИТАЙСКОГО, НО И МЕСТНОГО ПРОИЗВОДСТВА!</p>
         </div>
+        <div class="clearfix"></div>
       </div>
 
       <div class="sedona-image-block">
@@ -80,9 +82,9 @@
           <p class="about-block__decription">ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ КОНЕЧНО ВЫ ОСМЕЛИТЕСЬ</p>
         </div>
         <div class="sedona-block-img">
-          <img class="sedona-block-img__img" src="img/n2.jpg" alt="
-devil's_bridge" width="512" height="256">
+          <img class="sedona-block-img__img" src="img/n2.jpg" alt="devil's_bridge" width="512" height="256">
         </div>
+        <div class="clearfix"></div>
       </div>
 
       <div class="about-blocks">
@@ -101,6 +103,7 @@ devil's_bridge" width="512" height="256">
           <p class="about-block__number">— №5 —</p>
           <p class="about-block__decription">БОЛЬШИНСТВО ЕДЕТ В ГРАНД КАНЬОН И ТОЛПИТСЯ ТАМ</p>
         </div>
+        <div class="clearfix"></div>
       </div>
 
       <div class="search-form">
@@ -132,7 +135,7 @@ devil's_bridge" width="512" height="256">
               <label class="input-data__label" for="child">ДЕТИ:</label>
               <input class="input-data__input" type="number" id="child">
             </div>
-
+            <div class="clearfix"></div>
             <button class="input__button" type="submit">НАЙТИ</button>
           </form>
         </div>
@@ -161,6 +164,7 @@ devil's_bridge" width="512" height="256">
           <img class="copyright__img" src="img/html_academy.png" alt="html" width="113" height="39">
         </a>
       </div>
+      <div class="clearfix"></div>
     </footer>
   </div>
 </body>

@@ -1,0 +1,165 @@
+
+
+.main-navigation__item {
+  display: block;
+}
+
+.main-navigation__item--left {
+  float: left;
+}
+
+.main-navigation__item--right {
+  float: right;
+}
+
+.logo {
+  position: absolute;
+  left:50%;
+  margin-right: 70px;
+  z-index: 20;
+}
+
+.image {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.image__background {
+  width: 100%;
+}
+
+.image__footer {
+  width: 100%;
+  position: absolute;
+  bottom:3px;
+}
+
+.sedona-header {
+  text-align: center;
+  vertical-align: middle;
+  margin-right: auto;
+  margin-left: auto;
+  width:500px;
+  margin-bottom: 55px;
+}
+
+.sedona-header__caption {
+  margin-bottom: 35px;
+}
+
+.sedona-image-block {
+  width: 100%;
+  background-color: red;
+  margin-bottom: 45px;
+}
+
+.about-block {
+  display: block;
+  background-color: blue;
+  width: 33%;
+  float: left;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
+.about-block__decription {
+  width: 180px;
+  margin:  0 auto;
+}
+
+.sedona-block-img {
+  display: block;
+  float: left;
+  width: 67%;
+}
+
+.clearfix {
+  clear: both;
+  height: 0;
+}
+
+.sedona-block-img__img {
+  width: 100%;
+}
+
+.about-block {
+  display: block;
+  float: left;
+}
+
+.sedona-list-item {
+  display:block;
+  float: left;
+  margin-right: 60px;
+  text-align: center;
+  vertical-align: middle;
+  width: 30%;
+}
+
+.sedona-list-item__description {
+  width: 160px;
+  margin: 0 auto;
+}
+
+.sedona-list-item__description:nth-child(2) {
+  width: 155px;
+  margin: 0 auto;
+}
+
+.sedona-list-item__description:last-child {
+  width: 165px;
+  margin: 0 auto;
+}
+
+.sedona-list-item:before {
+  margin:  0 auto;
+}
+
+.search-form {
+  text-align: center;
+}
+
+.search-form__description {
+  width: 440px;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.input {
+  width: 570px;
+  margin: auto;
+}
+
+.input-data--number {
+  float: left;
+}
+
+.footer-hash {
+  float: left;
+  width: 33%;
+}
+
+.social-list {
+  float: left;
+  width: 33%;
+}
+
+.social-list__item {
+  float: left;
+}
+
+.copyright {
+  float: left;
+  width: 33%;
+}
+
+.copyright__description {
+  float: left;
+  margin-right: 5px;
+}
+
+.copyright__link{
+  float: left;
+}
