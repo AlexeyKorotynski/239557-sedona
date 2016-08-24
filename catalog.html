@@ -5,14 +5,14 @@
   <meta charset="utf-8">
   <title>HTML Academy: Каталог</title>
   <link href="css/style.css" rel="stylesheet">
+  <link href="css/index.css" rel="stylesheet">
 </head>
 
 <body>
   <div class="container">
     <header class="main-header">
-
       <nav class="main-navigation">
-        <ul class="main-navigation__list">
+        <ul class="main-navigation__list main-navigation__list--catalog">
           <li class="main-navigation__item">
             <a class="main-navigation__link" href="#">ИНФОРМАЦИЯ</a>
           </li>
@@ -39,50 +39,51 @@
 
       <div class="filter">
         <form action="/echo" method="post">
+          <div class="filter-area">
+            <ul class="checkboxes-list">
+              <li class="checkboxes-list__item">
+                <h2 class="checkboxes-list__caption">ИНФРАСТРУКТУРА:</h2>
+              </li>
+              <li class="checkboxes-list__item">
+                <input class="checkboxes-list__input" type="checkbox" id="pool" name="pool" checked>
+                <label class="checkboxes-list__label" for="pool">БАССЕЙН</label>
+              </li>
+              <li class="checkboxes-list__item">
+                <input class="checkboxes-list__input" type="checkbox" id="parking" name="parking">
+                <label class="checkboxes-list__label" for="parking">ПАРКОВКА</label>
+              </li>
+              <li class="checkboxes-list__item">
+                <input class="checkboxes-list__input" type="checkbox" id="wi-fi" name="wi-fi">
+                <label class="checkboxes-list__label" for="wi-fi">WI-FI</label>
+              </li>
+            </ul>
 
-          <ul class="checkboxes-list">
-            <li class="checkboxes-list__item">
-              <h2 class="checkboxes-list__caption">ИНФРАСТРУКТУРА:</h2>
-            </li>
-            <li class="checkboxes-list__item">
-              <input class="checkboxes-list__input" type="checkbox" id="pool" name="pool" checked>
-              <label class="checkboxes-list__label" for="pool">БАССЕЙН</label>
-            </li>
-            <li class="checkboxes-list__item">
-              <input class="checkboxes-list__input" type="checkbox" id="parking" name="parking">
-              <label class="checkboxes-list__label" for="parking">ПАРКОВКА</label>
-            </li>
-            <li class="checkboxes-list__item">
-              <input class="checkboxes-list__input" type="checkbox" id="wi-fi" name="wi-fi">
-              <label class="checkboxes-list__label" for="wi-fi">WI-FI</label>
-            </li>
-          </ul>
 
+            <ul class="checkboxes-list">
+              <li class="checkboxes-list__item">
+                <h2 class="checkboxes-list__caption">ТИП ЖИЛЬЯ:</h2>
+              </li>
+              <li class="checkboxes-list__item">
+                <input class="checkboxes-list__input" type="checkbox" id="hostel" name="hostel" checked>
+                <label class="checkboxes-list__label" for="hostel">ГОСТИНИЦА</label>
+              </li>
+              <li class="checkboxes-list__item">
+                <input class="checkboxes-list__input" type="checkbox" id="motel" name="motel" checked>
+                <label class="checkboxes-list__label" for="motel">МОТЕЛЬ</label>
+              </li>
+              <li class="checkboxes-list__item">
+                <input class="checkboxes-list__input" type="checkbox" id="apartments" name="apartments" checked>
+                <label class="checkboxes-list__label" for="apartments">АПАРТАМЕНТЫ</label>
+              </li>
+            </ul>
 
-          <ul class="checkboxes-list">
-            <li class="checkboxes-list__item">
-              <h2 class="checkboxes-list__caption">ТИП ЖИЛЬЯ:</h2>
-            </li>
-            <li class="checkboxes-list__item">
-              <input class="checkboxes-list__input" type="checkbox" id="hostel" name="hostel" checked>
-              <label class="checkboxes-list__label" for="hostel">ГОСТИНИЦА</label>
-            </li>
-            <li class="checkboxes-list__item">
-              <input class="checkboxes-list__input" type="checkbox" id="motel" name="motel" checked>
-              <label class="checkboxes-list__label" for="motel">МОТЕЛЬ</label>
-            </li>
-            <li class="checkboxes-list__item">
-              <input class="checkboxes-list__input" type="checkbox" id="apartments" name="apartments" checked>
-              <label class="checkboxes-list__label" for="apartments">АПАРТАМЕНТЫ</label>
-            </li>
-          </ul>
-
-          <div class="cost">
-            <h2 class="cost__caption">СТОИМОСТЬ В СУТКИ (Р):</h2>
-            <div class="cost__table">ОТ 0</div>
-            <div class="cost__table">ДО 3000</div>
-            <div class="cost__range"></div>
-            <button class="cost__button" type="submit">ПОКАЗАТЬ</button>
+            <div class="cost">
+              <h2 class="cost__caption">СТОИМОСТЬ В СУТКИ (Р):</h2>
+              <div class="cost__table">ОТ 0</div>
+              <div class="cost__table">ДО 3000</div>
+              <div class="cost__range"></div>
+              <button class="cost__button" type="submit">ПОКАЗАТЬ</button>
+            </div>
           </div>
         </form>
       </div>
@@ -123,10 +124,10 @@
             <p class="about__description">ОТ 3500 Р.</p>
             <a class="about__link about__link--brown" href="#">ЗАБРОНИРОВАТЬ</a>
           </div>
-          <div class="status">
-            <div class="status__stars"></div>
-            <p class="status__rating">РЕЙТИНГ: 8,5</p>
-          </div>
+        </div>
+        <div class="status">
+          <div class="status__stars"></div>
+          <p class="status__rating">РЕЙТИНГ: 8,5</p>
         </div>
       </div>
 
@@ -145,10 +146,10 @@
             <p class="about__description">от 2000 Р.</p>
             <a class="about__link about__link--brown" href="#">ЗАБРОНИРОВАТЬ</a>
           </div>
-          <div class="status">
-            <div class="status__stars"></div>
-            <p class="status__rating">РЕЙТИНГ: 8,9</p>
-          </div>
+        </div>
+        <div class="status">
+          <div class="status__stars"></div>
+          <p class="status__rating">РЕЙТИНГ: 8,9</p>
         </div>
       </div>
 
@@ -166,10 +167,10 @@
             <p class="about__description">от 4000 Р.</p>
             <a class="about__link about__link--brown" href="#">ЗАБРОНИРОВАТЬ</a>
           </div>
-          <div class="status">
-            <div class="status__stars"></div>
-            <p class="status__rating">РЕЙТИНГ: 9,2</p>
-          </div>
+        </div>
+        <div class="status">
+          <div class="status__stars"></div>
+          <p class="status__rating">РЕЙТИНГ: 9,2</p>
         </div>
       </div>
 
