@@ -1,14 +1,11 @@
-body {
+
+.container {
   width: 1280px;
 }
 
-.container {
+.page {
   width: 1200px;
-  margin:  0 auto;
-}
-
-.main-header {
-  position: relative;
+  margin: 0 auto;
 }
 
 .main-navigation__list {
@@ -16,6 +13,7 @@ body {
   flex-direction: row;
   justify-content:space-between;
   margin-bottom: 0px;
+  margin-top: 0;
 }
 
 .main-navigation__list--catalog {
@@ -24,7 +22,8 @@ body {
 
 .main-navigation__item {
   width: 150px;
-  min-height: 55px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .logo {
@@ -43,7 +42,6 @@ body {
   display: block;
   height: 57px;
   background: url("img/mountains_footer.png") no-repeat;
-
 }
 
 .sedona-header {
@@ -122,6 +120,11 @@ body {
   width: 570px;
   margin: 0 auto;
   padding-top: 55px;
+}
+
+.map {
+  height: 475px;
+  overflow: hidden;
 }
 
 .footer {

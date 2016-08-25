@@ -148,13 +148,13 @@ h2 {
 }
 
 .social-list__link {
-  background: url("../img/social_2.png") no-repeat #81b3d2;
+  background: url("../img/social_2.png") no-repeat #81b3d2 50% 50%;
 }
 
 li:first-child .social-list__link {
-  background: url("../img/social_1.png") no-repeat #81b3d2;
+  background: url("../img/social_1.png") no-repeat #81b3d2 50% 50%;
 }
 
 li:last-child .social-list__link {
-  background: url("../img/social_3.png") no-repeat #81b3d2;
+  background: url("../img/social_3.png") no-repeat #81b3d2 50% 50%;
 }
