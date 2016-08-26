@@ -1,17 +1,106 @@
+
+
 body {
 font-family:PT Sans, Arial, sans-serif;
 font-size: 14px;
 line-height: 26px;
 font-weight: normal;
+background-color: #f2f2f2;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.main-navigation__list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.main-navigation__item {
+  width: 150px;
+}
+
+.main-navigation__item:first-child {
+  margin-left: 70px;
+  margin-right: 110px;
+}
+
+.main-navigation__item:nth-child(2) {
+  width: 100px;
+}
+
+.main-navigation__item:nth-child(3) {
+  width: 90px;
+  margin-left: 390px;
+  margin-right: 110px;
+}
+
+.main-navigation__item:last-child {
+  width: 110px;
+  margin-right: 50px;
+}
+
+.main-navigation__item:last-child .main-navigation__link {
+  text-align: right;;
 }
 
 .main-navigation__link {
 font-weight: bold;
 text-decoration: none;
+display: block;
+text-align: left;
+vertical-align: middle;
+padding-top: 15px;
+padding-bottom: 15px;
 }
 
-ul {
-  list-style: none;
+.logo {
+  position: absolute;
+  left: 50%;
+  margin-left: -69px;
+  top: 0;
+  z-index: 2;
+}
+
+
+.image {
+  display: inline-block;
+  height: 510px;
+  width: 1200px;
+  background: url("../img/welcome.jpg") no-repeat;
+  background-position: 50% 23%;
+  margin-bottom: 60px;
+}
+
+.image::after {
+  display: block;
+  content: "";
+  width: 1200px;
+  height: 57px;
+  background: url("../img/mountains_footer.png") no-repeat;
+  margin-top: 453px;
+}
+
+
+.sedona-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.sedona-header__caption {
+  width: 440px;
+  margin:  0 auto;
+  margin-bottom: 40px;
+}
+
+.sedona-header__description {
+  width: 490px;
+  margin: 0 auto;
 }
 
 h2 {
@@ -20,64 +109,292 @@ h2 {
   font-weight: bold;
 }
 
+.sedona-image-block {
+  display: flex;
+}
+
+.about-block {
+  text-align: center;
+  display: block;
+  color: white;
+  width: 400px;
+  padding: 0;
+  background-color: #81b3d2;
+}
+
 .about-block__caption {
   font-size: 21px;
   line-height: 21px;
   font-weight: bold;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 25px;
+  width: 155px;
+}
+
+.about-block__number {
+  margin: 0 auto;
+  margin-bottom: 25px;
+  width: 60px;
 }
 
 .about-block__decription {
   font-size: 14px;
   line-height: 21px;
   font-weight: normal;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  width: 280px;
 }
 
-.sedona-list-item__caption {
-  font-size: 21px;
-  line-height: 21px;
-  font-weight: bold;
+.sedona-image-block--reverse {
+  flex-direction: row-reverse;
 }
 
-.search-form__description {
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: normal;
+.sedona-block-img {
+  width: 800px;
+  display: block;
+}
+
+.sedona-block-img__img {
+  display: block;
+}
+
+.sedona-list {
+  display: flex;
+}
+
+.sedona-list-item {
+  text-align: center;
+  width: 400px;
 }
 
 .sedona-list-item__description {
   font-size: 14px;
   line-height: 21px;
   font-weight: normal;
+  width: 290px;
+  margin: 0 auto;
+  margin-bottom: 90px;
 }
 
-.search-form__link {
+.sedona-list-item__caption {
   font-size: 21px;
-  line-height: 26px;
+  line-height: 21px;
   font-weight: bold;
+  width: 120px;
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
 
-.input__button {
-  font-size: 21px;
-  line-height: 26px;
-  font-weight: bold;
+.sedona-list-item::before {
+ display: block;
+ content: "";
+ width:74px;
+ height:70px;
+ background: url("../img/item_1.png") no-repeat;
+ margin: auto auto;
+ margin-top: 60px;
+ margin-bottom: 30px;
+}
+
+.food::before {
+ width:75px;
+ height:72px;
+ background: url("../img/item_2.png") no-repeat;
+ margin-bottom: 28px;
+}
+
+.souvenirs::before {
+ width:64px;
+ height:76px;
+ background: url("../img/item_3.png") no-repeat;
+ margin-bottom: 24px;
+}
+
+.about-blocks {
+  display: flex;
+}
+
+.about-block--gray {
+  color: black;
+  background-color: #eeeeee;
 }
 
 .search-form__caption {
   font-size: 30px;
   line-height: 24px;
   font-weight: bold;
+  text-align: center;
+  width: 310px;
+  margin: 0 auto;
+  margin-top: 55px;
+  margin-bottom: 35px;
+}
+
+.search-form__description {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: normal;
+  text-align: center;
+  width: 440px;
+  margin: 0 auto;
+  margin-bottom: 55px;
+}
+
+.search-form__link {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  background-color: #766357;
+  display: block;
+  width: 570px;
+  margin: 0 auto;
+  padding: 35px 0;
+}
+
+.input {
+  width: 570px;
+  margin: 0 auto;
+  display: none;
+}
+
+.input-data {
+  padding-left: 60px;
+}
+
+.input-data:first-of-type {
+  padding-top: 55px;
+}
+
+.input-data:nth-of-type(2) {
+  padding-top: 30px;
+}
+
+.input-data--number {
+  display: inline-block;
+  padding-top: 30px;
+}
+
+.input-data--number {
+  margin-right: 55px;
+}
+
+.input-data--number .input-data__input {
+  width: 40px;
 }
 
 .input-data__label {
   font-size: 14px;
   line-height: 26px;
   font-weight: bold;
+  margin-right: 20px;
 }
 
-.about__link {
-  font-size: 14px;
-  line-height: 21px;
+.input-data__input {
+  width: 345px;
+}
+
+.input__button {
+  font-size: 21px;
+  line-height: 26px;
   font-weight: bold;
+  border: none;
+  background-color: #81b3d2;
+  width: 460px;
+  margin-left: 55px;
+  margin-top: 55px;
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+
+.map {
+  height: 475px;
+  overflow: hidden;
+}
+
+.footer {
+  display: flex;
+}
+
+.footer-hash {
+  width: 400px;
+  text-align: center;
+}
+
+.footer-hash__caption {
+  width: 140px;
+  margin: 50px auto;
+}
+
+.social-list {
+  display: flex;
+  justify-content:center;
+  width: 400px;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  margin-top: 35px;
+}
+
+ .social-list__link {
+  content: "";
+  display: block;
+  width:46px;
+  height:46px;
+  background: url("../img/social_2.png") no-repeat #81b3d2 50% 50%;
+  margin-right: 6px;
+}
+
+.social-list__item:first-child .social-list__link {
+  background: url("../img/social_1.png") no-repeat #81b3d2 50% 50%;
+}
+
+.social-list__item:last-child .social-list__link {
+  background: url("../img/social_3.png") no-repeat #81b3d2 50% 50%;
+  margin-right: 0;
+}
+
+.copyright {
+  display: flex;
+  width: 400px;
+  margin:  0 auto;
+}
+
+.copyright__description {
+  width: 75px;
+  margin: 0;
+  margin-left: 100px;
+  margin-top: 55px;
+  margin-right: 10px;
+}
+
+.copyright__link {
+  margin-top: 40px;
+}
+
+.copyright__img {
+  display: block;
+}
+
+.filter {
+  background: url("../img/background.jpg") no-repeat;
+}
+
+.checkboxes-list {
+  list-style: none;
+}
+
+.checkboxes-list:first-of-type {
+  width: 240px;
+}
+
+.checkboxes-list:last-of-type {
+  width: 290px;
+  margin-right: 200px;
 }
 
 .checkboxes-list__caption {
@@ -86,10 +403,10 @@ h2 {
   font-weight: bold;
 }
 
-.found-list {
-  font-size: 12px;
-  line-height: 18px;
-  font-weight: normal;
+.cost__caption {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: bold;
 }
 
 .cost__button {
@@ -98,10 +415,53 @@ h2 {
   font-weight: normal;
 }
 
+.found {
+  display: flex;
+  padding-left: 70px;
+}
+
+.found-list {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: normal;
+  display: flex;
+  list-style: none;
+}
+
+.found-list__item {
+  margin-right: 35px;
+}
+
+.found-list__item:first-child {
+  margin-right: 40px;
+}
+
+.list-item {
+  display: flex;
+  padding-left: 70px;
+  padding-top: 30px;
+}
+
+.list-item-image {
+  margin-right: 30px;
+}
+
+.content-area {
+  padding-top: -10px;
+  margin-right: 535px;
+}
+
 .about {
   font-size: 14px;
   line-height: 21px;
   font-weight: normal;
+  display: inline-block;
+}
+
+.about__link {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: bold;
 }
 
 .status__rating {
@@ -110,51 +470,6 @@ h2 {
   font-weight: normal;
 }
 
-.cost__caption {
-  font-size: 16px;
-  line-height: 21px;
-  font-weight: bold;
-}
-
-.filter {
-  background: url("../img/background.jpg") no-repeat;
-}
-
- .sedona-list-item::before {
-  content: "";
-  display: block;
-  width:74px;
-  height:70px;
-  background: url("../img/item_1.png") no-repeat;
-}
-
-.food::before {
-  width:75px;
-  height:72px;
-  background: url("../img/item_2.png") no-repeat;
-}
-
-.souvenirs::before {
-  width:64px;
-  height:76px;
-  background: url("../img/item_3.png") no-repeat;
-}
-
- .social-list__link {
-  content: "";
-  display: block;
-  width:46px;
-  height:46px;
-}
-
-.social-list__link {
-  background: url("../img/social_2.png") no-repeat #81b3d2 50% 50%;
-}
-
-li:first-child .social-list__link {
-  background: url("../img/social_1.png") no-repeat #81b3d2 50% 50%;
-}
-
-li:last-child .social-list__link {
-  background: url("../img/social_3.png") no-repeat #81b3d2 50% 50%;
+.filter-area {
+  display: flex;
 }
