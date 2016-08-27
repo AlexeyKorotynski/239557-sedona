@@ -1,4 +1,4 @@
-  body {
+body {
 font-family:PT Sans, Arial, sans-serif;
 font-size: 14px;
 line-height: 26px;
@@ -236,7 +236,11 @@ h2 {
 
 .input {
   width: 570px;
+  background-color: white;
   margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  margin-left: -285px;
 }
 
 .input-data {
@@ -327,6 +331,10 @@ h2 {
   height:46px;
   background: url("../img/social_2.png") no-repeat #81b3d2 50% 50%;
   margin-right: 6px;
+}
+
+.social-list__item {
+  height: 46px;
 }
 
 .social-list__item:first-child .social-list__link {
@@ -439,6 +447,7 @@ h2 {
 .found {
   display: flex;
   padding-left: 70px;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .found__caption {
@@ -475,6 +484,7 @@ h2 {
   display: flex;
   padding-left: 70px;
   padding-top: 30px;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .list-item-image {
