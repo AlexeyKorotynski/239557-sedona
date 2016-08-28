@@ -1,3 +1,7 @@
+* {
+  outline: 1px solid black;
+}
+
 body {
 font-family:PT Sans, Arial, sans-serif;
 font-size: 14px;
@@ -215,7 +219,7 @@ h2 {
   line-height: 24px;
   font-weight: normal;
   text-align: center;
-  width: 440px;
+  width: 450px;
   margin: 0 auto;
   margin-bottom: 55px;
 }
@@ -288,6 +292,7 @@ h2 {
   width: 460px;
   margin-left: 55px;
   margin-top: 55px;
+  margin-bottom: 55px;
   padding-top: 15px;
   padding-bottom: 20px;
 }
@@ -358,10 +363,12 @@ h2 {
   margin-left: 100px;
   margin-top: 55px;
   margin-right: 10px;
+  min-height: 25px;
 }
 
 .copyright__link {
   margin-top: 40px;
+  height: 39px;
 }
 
 .copyright__img {
@@ -481,29 +488,27 @@ h2 {
 }
 
 .list-item {
-  display: flex;
-  padding-left: 70px;
-  padding-top: 30px;
   border-bottom: 1px solid #e5e5e5;
 }
 
 .list-item-image {
-  vertical-align: top;
-  margin-right: 30px;
-}
-
-.list-item-image__img {
-  margin-bottom: 30px;
+  display: inline-block;
+  height: 90px;
+  margin-left:75px;
+  margin-top: 30px;
+  margin-right: 25px;
 }
 
 .content-area {
-  width: 650px;
+    display: inline-block;
+    margin-top: 25px;
+    vertical-align: top;
+    width: 785px;
 }
 
 .content-area__caption {
   margin: 0;
-  margin-top: -5px;
-  margin-bottom: 9px;
+  margin-bottom: 5px;
 }
 
 .about {
@@ -514,9 +519,13 @@ h2 {
   margin-right: 5px;
 }
 
-.about__description {
+.about:last-child {
   margin: 0;
-  margin-bottom: 9px;
+}
+
+.about__description {
+ margin: 0;
+ margin-bottom: 12px;
 }
 
 .about__link {
@@ -526,8 +535,16 @@ h2 {
   text-decoration: none;
   color: white;
   background-color: #81b3d2;
-  padding: 5px 7px;
+  padding: 5px 18px;
   display: block;
+}
+
+.about:first-child {
+  width: 110px;
+}
+
+.about:last-child {
+  width: 145px;
 }
 
 .about__link--brown {
@@ -535,7 +552,16 @@ h2 {
 }
 
 .status {
-  width: 240px;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 30px;
+}
+
+.status__stars {
+  width: 120px;
+  background: blue;
+  height: 20px;
+  margin-bottom: 49px;
 }
 
 .status__rating {
@@ -545,7 +571,5 @@ h2 {
   text-align: center;
   width: 110px;
   margin: 0;
-  margin-top: 95px;
   background-color: #f2f2f2;
-  float: right;
 }
