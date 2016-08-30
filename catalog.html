@@ -44,19 +44,21 @@
               </li>
               <li class="checkboxes-list__item">
                 <label class="checkboxes-list__label" for="pool">
-                  <input class="checkboxes-list__input" type="checkbox" id="pool" name="pool" checked> БАССЕЙН
-                  <span class="checkbox"></span>
+                  <input class="checkboxes-list__input" type="checkbox" id="pool" name="pool" checked>
+                  <span class="checkboxes-list__indicator"></span> БАССЕЙН
                 </label>
               </li>
               <li class="checkboxes-list__item">
-                <input class="checkboxes-list__input" type="checkbox" id="parking" name="parking">
-                <span class="checkbox"></span>
-                <label class="checkboxes-list__label" for="parking">ПАРКОВКА</label>
+                <label class="checkboxes-list__label" for="parking">
+                  <input class="checkboxes-list__input" type="checkbox" id="parking" name="parking">
+                  <span class="checkboxes-list__indicator"></span> ПАРКОВКА
+                </label>
               </li>
               <li class="checkboxes-list__item">
-                <input class="checkboxes-list__input" type="checkbox" id="wi-fi" name="wi-fi">
-                <span class="checkbox"></span>
-                <label class="checkboxes-list__label" for="wi-fi">WI-FI</label>
+                <label class="checkboxes-list__label" for="wi-fi">
+                  <input class="checkboxes-list__input" type="checkbox" id="wi-fi" name="wi-fi" disabled>
+                  <span class="checkboxes-list__indicator"></span> WI-FI
+                </label>
               </li>
             </ul>
             <ul class="checkboxes-list">
@@ -64,28 +66,41 @@
                 <h2 class="checkboxes-list__caption">ТИП ЖИЛЬЯ:</h2>
               </li>
               <li class="checkboxes-list__item">
-                <input class="checkboxes-list__input" type="checkbox" id="hostel" name="hostel" checked>
-                <span class="checkbox"></span>
-                <label class="checkboxes-list__label" for="hostel">ГОСТИНИЦА</label>
+                <label class="checkboxes-list__label" for="hostel">
+                  <input class="checkboxes-list__input" type="checkbox" id="hostel" name="hostel" checked>
+                  <span class="checkboxes-list__indicator"></span> ГОСТИНИЦА
+                </label>
               </li>
               <li class="checkboxes-list__item">
-                <input class="checkboxes-list__input" type="checkbox" id="motel" name="motel" checked>
-                <span class="checkbox"></span>
-                <label class="checkboxes-list__label" for="motel">МОТЕЛЬ</label>
+                <label class="checkboxes-list__label" for="motel">
+                  <input class="checkboxes-list__input" type="checkbox" id="motel" name="motel" checked disabled>
+                  <span class="checkboxes-list__indicator"></span> МОТЕЛЬ
+                </label>
               </li>
               <li class="checkboxes-list__item">
-                <input class="checkboxes-list__input" type="checkbox" id="apartments" name="apartments" checked>
-                <span class="checkbox"></span>
-                <label class="checkboxes-list__label" for="apartments">АПАРТАМЕНТЫ</label>
+                <label class="checkboxes-list__label" for="apartments">
+                  <input class="checkboxes-list__input" type="checkbox" id="apartments" name="apartments" checked>
+                  <span class="checkboxes-list__indicator"></span> АПАРТАМЕНТЫ
+                </label>
               </li>
             </ul>
             <div class="cost">
               <h2 class="cost__caption">СТОИМОСТЬ В СУТКИ (Р):</h2>
               <div class="table">
-                <div class="cost__table">ОТ 0</div>
-                <div class="cost__table">ДО 3000</div>
+                <label class="table__cost">ОТ
+                  <input class="table__input" type="text" name="min" value="0">
+                </label>
+                <label class="table__cost">ДО
+                  <input class="table__input" type="text" name="max" value="3000">
+                </label>
               </div>
-              <div class="cost__range"></div>
+              <div class="range">
+                <div class="range__scale">
+                  <div class="range__select"></div>
+                </div>
+                <div class="range__slider"></div>
+                <div class="range__slider"></div>
+              </div>
               <button class="cost__button" type="submit">ПОКАЗАТЬ</button>
             </div>
           </div>

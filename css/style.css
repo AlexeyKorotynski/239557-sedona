@@ -575,8 +575,41 @@ h2 {
   margin-bottom: 25px;
 }
 
+.checkboxes-list__label {
+  position: relative;
+  cursor: pointer;
+  margin-left: 40px;
+}
+
+.checkboxes-list__input {
+ display: none;
+}
+
+ .checkboxes-list__input + .checkboxes-list__indicator {
+  position: absolute;
+  height: 22px;
+  width: 22px;
+  background: url("../img/sprite.png") no-repeat -385px -48px;
+  left: -39px;
+  top:-1px;
+}
+
+ .checkboxes-list__input:disabled + .checkboxes-list__indicator {
+   background: url("../img/sprite.png") no-repeat -383px -96px;
+ }
+
+.checkboxes-list__input:checked + .checkboxes-list__indicator {
+  height: 22px;
+  width: 26px;
+  background: url("../img/sprite.png") no-repeat -325px -92px;
+}
+
+.checkboxes-list__input:checked:disabled + .checkboxes-list__indicator {
+  background: url("../img/sprite.png") no-repeat -327px -48px;
+}
+
 .cost {
-  width: 320px;
+  width: 330px;
 }
 
 .cost__caption {
@@ -588,11 +621,80 @@ h2 {
   margin-bottom: 15px;
 }
 
-.cost__table {
+.table {
+  height: 36px;
+  border: solid 2px white;
+  border-radius: 2px;
+  margin-bottom: 20px;
+  font-size: 0;
+  position: relative;
+}
+
+.table:after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 22px;
+  background:white;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.table__cost {
   display: inline-block;
-  width: 150px;
-  text-align: center;
-  margin: 5px 0;
+  vertical-align: top;
+  cursor: pointer;
+  width: 90px;
+  padding-left: 65px;
+  font-size: 14px;
+  line-height: 38px;
+}
+
+.table__input {
+  width: 50px;
+  margin: 0;
+  color: inherit;
+  font: inherit;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.range {
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.range__scale {
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range__select {
+  width: 80%;
+  height: 2px;
+  background: white;
+}
+
+.range__slider {
+  position: absolute;
+  top: -9px;
+  width: 4px;
+  height: 4px;
+  background: #ababab;
+  border: 8px solid white;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range__slider:last-child {
+  left: 80%;
+}
+
+.range__slider:hover {
+  background: #1c4f80;
 }
 
 .cost__button {
@@ -602,19 +704,14 @@ h2 {
   color: white;
   border: white solid 2px;
   background: transparent;
-  padding: 5px 35px;
-  margin-top: 25px;
+  padding: 6px 35px;
   margin-left: 95px;
+  cursor: pointer;
 }
 
 .cost__button:hover {
   background-color: white;
   color: black;
-}
-
-.table {
-  outline: solid 2px white;
-  margin-left: 10px;
 }
 
 .found {
