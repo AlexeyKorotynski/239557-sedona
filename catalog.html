@@ -43,15 +43,19 @@
                 <h2 class="checkboxes-list__caption">ИНФРАСТРУКТУРА:</h2>
               </li>
               <li class="checkboxes-list__item">
-                <input class="checkboxes-list__input" type="checkbox" id="pool" name="pool" checked>
-                <label class="checkboxes-list__label" for="pool">БАССЕЙН</label>
+                <label class="checkboxes-list__label" for="pool">
+                  <input class="checkboxes-list__input" type="checkbox" id="pool" name="pool" checked> БАССЕЙН
+                  <span class="checkbox"></span>
+                </label>
               </li>
               <li class="checkboxes-list__item">
                 <input class="checkboxes-list__input" type="checkbox" id="parking" name="parking">
+                <span class="checkbox"></span>
                 <label class="checkboxes-list__label" for="parking">ПАРКОВКА</label>
               </li>
               <li class="checkboxes-list__item">
                 <input class="checkboxes-list__input" type="checkbox" id="wi-fi" name="wi-fi">
+                <span class="checkbox"></span>
                 <label class="checkboxes-list__label" for="wi-fi">WI-FI</label>
               </li>
             </ul>
@@ -61,14 +65,17 @@
               </li>
               <li class="checkboxes-list__item">
                 <input class="checkboxes-list__input" type="checkbox" id="hostel" name="hostel" checked>
+                <span class="checkbox"></span>
                 <label class="checkboxes-list__label" for="hostel">ГОСТИНИЦА</label>
               </li>
               <li class="checkboxes-list__item">
                 <input class="checkboxes-list__input" type="checkbox" id="motel" name="motel" checked>
+                <span class="checkbox"></span>
                 <label class="checkboxes-list__label" for="motel">МОТЕЛЬ</label>
               </li>
               <li class="checkboxes-list__item">
                 <input class="checkboxes-list__input" type="checkbox" id="apartments" name="apartments" checked>
+                <span class="checkbox"></span>
                 <label class="checkboxes-list__label" for="apartments">АПАРТАМЕНТЫ</label>
               </li>
             </ul>
@@ -90,7 +97,7 @@
           <li class="found-list__item">
             <p class="found-list__text">СОРТИРОВКА:</p>
           </li>
-          <li class=" found-list__item">
+          <li class="found-list__item found-list__item--active">
             <a class="found-list__link" href="#">ПО ЦЕНЕ</a>
           </li>
           <li class="found-list__item">
@@ -102,67 +109,75 @@
         </ul>
         <div class="found-arrows">
           <a class="found-arrows__link" href="#"></a>
-          <a class="found-arrows__link" href="#"></a>
+          <a class="found-arrows__link found-arrows__link--active" href="#"></a>
         </div>
       </div>
-      <div class="list-item">
-        <div class="list-item-image">
-          <img class="list-item-image__img" src="img/hotel_1.jpg" alt="AMARA RESORT & SPA" width="135" height="90">
-        </div>
-        <div class="content-area">
-          <h2 class="content-area__caption">AMARA RESORT & SPA</h2>
-          <div class="about">
-            <p class="about__description">ГОСТИНИЦА</p>
-            <a class="about__link" href="#">ПОДРОБНЕЕ</a>
+      <div class="list">
+        <div class="list-item">
+          <div class="list-item-image">
+            <img class="list-item-image__img" src="img/hotel_1.jpg" alt="AMARA RESORT & SPA" width="135" height="90">
           </div>
-          <div class="about">
-            <p class="about__description">ОТ 3500 Р.</p>
-            <a class="about__link about__link--brown" href="#">ЗАБРОНИРОВАТЬ</a>
+          <div class="content-area">
+            <div class="content-area__caption">
+              <a class="content-area__link" href="#">AMARA RESORT & SPA</a>
+            </div>
+            <div class="about">
+              <p class="about__description">ГОСТИНИЦА</p>
+              <a class="about__link" href="#">ПОДРОБНЕЕ</a>
+            </div>
+            <div class="about">
+              <p class="about__description">ОТ 3500 Р.</p>
+              <a class="about__link about__link--brown" href="#">ЗАБРОНИРОВАТЬ</a>
+            </div>
           </div>
-        </div>
-        <div class="status">
-          <div class="status__stars"></div>
-          <p class="status__rating">РЕЙТИНГ: 8,5</p>
-        </div>
-      </div>
-      <div class="list-item">
-        <div class="list-item-image">
-          <img class="list-item-image__img" src="img/hotel_2.jpg" alt="DESERT QUAIL INN" width="135" height="90">
-        </div>
-        <div class="content-area">
-          <h2 class="content-area__caption">DESERT QUAIL INN</h2>
-          <div class="about">
-            <p class="about__description">МОТЕЛЬ</p>
-            <a class="about__link" href="#">ПОДРОБНЕЕ</a>
-          </div>
-          <div class="about">
-            <p class="about__description">от 2000 Р.</p>
-            <a class="about__link about__link--brown" href="#">ЗАБРОНИРОВАТЬ</a>
+          <div class="status">
+            <div class="status__stars"></div>
+            <p class="status__rating">РЕЙТИНГ: 8,5</p>
           </div>
         </div>
-        <div class="status">
-          <div class="status__stars"></div>
-          <p class="status__rating">РЕЙТИНГ: 8,9</p>
-        </div>
-      </div>
-      <div class="list-item">
-        <div class="list-item-image">
-          <img class="list-item-image__img" src="img/hotel_3.jpg" alt="VILLAS AT POCO DIABLO" width="135" height="90">
-        </div>
-        <div class="content-area">
-          <h2 class="content-area__caption">VILLAS AT POCO DIABLO</h2>
-          <div class="about">
-            <p class="about__description">АПАРТАМЕНТЫ</p>
-            <a class="about__link" href="#">ПОДРОБНЕЕ</a>
+        <div class="list-item">
+          <div class="list-item-image">
+            <img class="list-item-image__img" src="img/hotel_2.jpg" alt="DESERT QUAIL INN" width="135" height="90">
           </div>
-          <div class="about">
-            <p class="about__description">от 4000 Р.</p>
-            <a class="about__link about__link--brown" href="#">ЗАБРОНИРОВАТЬ</a>
+          <div class="content-area">
+            <div class="content-area__caption">
+              <a class="content-area__link" href="#">DESERT QUAIL INN</a>
+            </div>
+            <div class="about">
+              <p class="about__description">МОТЕЛЬ</p>
+              <a class="about__link" href="#">ПОДРОБНЕЕ</a>
+            </div>
+            <div class="about">
+              <p class="about__description">от 2000 Р.</p>
+              <a class="about__link about__link--brown" href="#">ЗАБРОНИРОВАТЬ</a>
+            </div>
+          </div>
+          <div class="status">
+            <div class="status__stars"></div>
+            <p class="status__rating">РЕЙТИНГ: 8,9</p>
           </div>
         </div>
-        <div class="status">
-          <div class="status__stars"></div>
-          <p class="status__rating">РЕЙТИНГ: 9,2</p>
+        <div class="list-item">
+          <div class="list-item-image">
+            <img class="list-item-image__img" src="img/hotel_3.jpg" alt="VILLAS AT POCO DIABLO" width="135" height="90">
+          </div>
+          <div class="content-area">
+            <div class="content-area__caption">
+              <a class="content-area__link" href="#">VILLAS AT POCO DIABLO</a>
+            </div>
+            <div class="about">
+              <p class="about__description">АПАРТАМЕНТЫ</p>
+              <a class="about__link" href="#">ПОДРОБНЕЕ</a>
+            </div>
+            <div class="about">
+              <p class="about__description">от 4000 Р.</p>
+              <a class="about__link about__link--brown" href="#">ЗАБРОНИРОВАТЬ</a>
+            </div>
+          </div>
+          <div class="status">
+            <div class="status__stars"></div>
+            <p class="status__rating">РЕЙТИНГ: 9,2</p>
+          </div>
         </div>
       </div>
     </main>
@@ -183,9 +198,7 @@
       </ul>
       <div class="copyright">
         <p class="copyright__description">WEBSITE BY</p>
-        <a class="copyright__link" href="#">
-          <img class="copyright__img" src="img/html_academy.png" alt="html" width="113" height="39">
-        </a>
+        <a class="copyright__link" href="#"></a>
       </div>
     </footer>
   </div>

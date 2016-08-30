@@ -99,21 +99,25 @@
           <form action="/echo" method="post">
             <div class="input-data">
               <label class="input-data__label" for="in">ДАТА ЗАЕЗДА:</label>
-              <input class="input-data__input" type="date" id="in">
+              <input class="input-data__input" value="24 АПРЕЛЯ 2016" type="text" id="in">
               <div class="input-data__img"></div>
             </div>
             <div class="input-data">
               <label class="input-data__label" for="out">ДАТА ВЫЕЗДА:</label>
-              <input class="input-data__input" type="date" id="out">
+              <input class="input-data__input" value="4 ИЮЛЯ 2016" type="text" id="out">
               <div class="input-data__img"></div>
             </div>
             <div class="input-data input-data--number">
               <label class="input-data__label" for="adult">ВЗРОСЛЫЕ:</label>
+              <span class="button button--minus"></span>
               <input class="input-data__input" type="number" id="adult">
+              <span class="button button--plus"></span>
             </div>
             <div class="input-data input-data--number">
               <label class="input-data__label" for="child">ДЕТИ:</label>
+              <span class="button button--minus"></span>
               <input class="input-data__input" type="number" id="child">
+              <span class="button button--plus"></span>
             </div>
             <button class="input__button" type="submit">НАЙТИ</button>
           </form>
@@ -140,9 +144,7 @@
       </ul>
       <div class="copyright">
         <p class="copyright__description">WEBSITE BY</p>
-        <a class="copyright__link" href="#htmlacademy">
-          <img class="copyright__img" src="img/html_academy.png" alt="html" width="113" height="39">
-        </a>
+        <a class="copyright__link" href="#htmlacademy"></a>
       </div>
     </footer>
   </div>
