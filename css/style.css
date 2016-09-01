@@ -273,10 +273,12 @@ h2 {
 
 .input-data {
   padding-left: 55px;
+  position: relative;
 }
 
 .input-data:first-of-type {
-  padding-top: 55px;
+  margin-top: 25px;
+  padding-top: 30px;
 }
 
 .input-data:nth-of-type(2) {
@@ -299,12 +301,8 @@ h2 {
   background: url("../img/sprite.png") no-repeat -573px -156px;
   height: 22px;
   width: 21px;
-  right: 65px;
-  bottom: 325px;
-}
-
-.input-data:nth-child(2) .input-data__img {
-  bottom: 257px;
+  top: 38px;
+  right:70px;
 }
 
 .input-data__img:hover {
@@ -370,13 +368,14 @@ h2 {
 }
 
 .input-data__input {
-  padding-right: 140px;
+  padding-right: 52px;
   box-sizing: border-box;
   background-color: #f2f2f2;
   border: none;
   padding-left: 14px;
   padding-top: 7px;
-  padding-bottom: 6px;
+  padding-bottom: 5px;
+  width: 345px;
   font-size: 14px;
   line-height: 26px;
   font-weight: bold;
@@ -668,6 +667,7 @@ h2 {
 
 .table__input {
   width: 50px;
+  padding-top: 0;
   margin: 0;
   color: inherit;
   font: inherit;
@@ -807,7 +807,8 @@ h2 {
 
 .found-arrows {
   display: inline-block;
-  margin-top: 50px;
+  margin-top: 40px;
+  margin-left: 8px;
 }
 
 .found-arrows__link:first-child {
@@ -851,19 +852,19 @@ h2 {
 
 .list-item {
   border-bottom: 1px solid #e5e5e5;
+  padding: 30px 0;
 }
 
 .list-item-image {
   display: inline-block;
   height: 90px;
   margin-left:75px;
-  margin-top: 30px;
+  margin-top: 5px;
   margin-right: 25px;
 }
 
 .content-area {
     display: inline-block;
-    margin-top: 25px;
     vertical-align: top;
     margin-right:520px;
 }
@@ -871,6 +872,7 @@ h2 {
 .content-area__caption {
   margin: 0;
   margin-bottom: 5px;
+  line-height: 21px;
 }
 
 .content-area__link {
@@ -950,14 +952,12 @@ h2 {
 .status {
   display: inline-block;
   vertical-align: top;
-  margin-top: 30px;
-  margin-bottom: 40px;
 }
 
 .status__stars {
   width: inherit;
   height: 20px;
-  margin-bottom: 45px;
+  margin-bottom: 55px;
   background: url("../img/sprite.png") no-repeat -109px -216px;
 }
 
