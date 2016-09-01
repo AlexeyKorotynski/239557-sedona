@@ -1,5 +1,3 @@
-
-
 body {
 font-family:PT Sans, Arial, sans-serif;
 font-size: 14px;
@@ -23,6 +21,10 @@ background-color: #f2f2f2;
 
 .main-navigation__item {
   width: 20%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display: flex;
+  justify-content: center;
 }
 
 .main-navigation__item:nth-child(2) {
@@ -32,10 +34,9 @@ background-color: #f2f2f2;
 .main-navigation__link {
 font-weight: bold;
 text-decoration: none;
-display: block;
 text-align: center;
-padding-top: 15px;
-padding-bottom: 15px;
+margin: 0 auto;
+
 }
 
 .main-navigation__link {
@@ -271,7 +272,7 @@ h2 {
 }
 
 .input-data {
-  padding-left: 60px;
+  padding-left: 55px;
 }
 
 .input-data:first-of-type {
@@ -289,17 +290,21 @@ h2 {
   margin-top: 10px;
 }
 
+.input-data--number:last-of-type {
+  padding-left: 50px;
+}
+
 .input-data__img {
   position: absolute;
   background: url("../img/sprite.png") no-repeat -573px -156px;
   height: 22px;
   width: 21px;
   right: 65px;
-  bottom: 330px;
+  bottom: 325px;
 }
 
 .input-data:nth-child(2) .input-data__img {
-  bottom: 260px;
+  bottom: 257px;
 }
 
 .input-data__img:hover {
@@ -310,18 +315,10 @@ h2 {
   background: url("../img/sprite.png") no-repeat -692px -156px;
 }
 
-.input-data--number .input-data__input {
-  padding-left: 0;
-  width: 40px;
-  height: 40px;
-  box-sizing: border-box;
-  vertical-align: top;
-}
-
 .button {
   display: inline-block;
-  width: 40px;
-  height: 40px;
+  width: 38px;
+  height: 38px;
   vertical-align: top;
 }
 
@@ -356,10 +353,16 @@ h2 {
   line-height: 26px;
   font-weight: bold;
   margin-right: 20px;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+.input-data:first-child .input-data__label {
+  margin-right: 23px;
 }
 
 .input-data--number .input-data__label {
-  margin-right: 40px;
+  margin-right: 38px;
 }
 
 .input-data--number:last-of-type .input-data__label {
@@ -367,25 +370,35 @@ h2 {
 }
 
 .input-data__input {
-  width: 345px;
-  height: 40px;
-  width: 345px;
+  padding-right: 140px;
   box-sizing: border-box;
   background-color: #f2f2f2;
   border: none;
   padding-left: 14px;
+  padding-top: 7px;
+  padding-bottom: 6px;
   font-size: 14px;
   line-height: 26px;
   font-weight: bold;
+  outline: none;
+}
+
+.input-data--number .input-data__input {
+  padding-left: 0;
+  width: 38px;
+  box-sizing: border-box;
+  vertical-align: top;
+  padding-right: 0;
+  text-align: center;
 }
 
 .input-data__input:hover {
   background-color: #ebebeb;
 }
 
-.input-data__input:active {
+.input-data__input:focus {
   background-color: white;
-  border:2px solid #e5e5e5;
+  outline:2px solid #e5e5e5;
 }
 
 .input__button {
@@ -405,6 +418,7 @@ h2 {
 
 .input__button:hover {
   background-color: #669ec0;
+  cursor: pointer;
 }
 
 .input__button:active {
@@ -626,6 +640,7 @@ h2 {
   border: solid 2px white;
   border-radius: 2px;
   margin-bottom: 20px;
+  margin-left: 10px;
   font-size: 0;
   position: relative;
 }
@@ -664,6 +679,7 @@ h2 {
 .range {
   position: relative;
   margin-bottom: 32px;
+  margin-left: 10px;;
 }
 
 .range__scale {
@@ -706,6 +722,7 @@ h2 {
   background: transparent;
   padding: 6px 35px;
   margin-left: 95px;
+  margin-bottom: 35px;
   cursor: pointer;
 }
 
@@ -741,28 +758,22 @@ h2 {
 }
 
 .found-list__item {
-  width: 90px;
   padding-top: 0px;
 }
 
 .found-list__item:first-child {
-  width: 76px;
   margin-right: 40px;
 }
 
 .found-list__item:nth-child(2) {
-  width: 49px;
   margin-right: 35px;
 }
 
 .found-list__item:nth-child(3) {
-  width: 49px;
   margin-right: 30px;
 }
 
-.found-list__item:nth-child(4) {
-  width: 76px;
-}
+
 
 .found-list__link {
   display:block;
@@ -940,12 +951,13 @@ h2 {
   display: inline-block;
   vertical-align: top;
   margin-top: 30px;
+  margin-bottom: 40px;
 }
 
 .status__stars {
   width: inherit;
   height: 20px;
-  margin-bottom: 49px;
+  margin-bottom: 45px;
   background: url("../img/sprite.png") no-repeat -109px -216px;
 }
 
