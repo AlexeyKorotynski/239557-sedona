@@ -293,7 +293,7 @@ h2 {
 }
 
 .input-data--number:last-of-type {
-  padding-left: 50px;
+  padding-left: 48px;
 }
 
 .input-data__img {
@@ -360,7 +360,7 @@ h2 {
 }
 
 .input-data--number .input-data__label {
-  margin-right: 38px;
+  margin-right: 40px;
 }
 
 .input-data--number:last-of-type .input-data__label {
@@ -717,11 +717,14 @@ h2 {
   font-size: 14px;
   line-height: 21px;
   font-weight: normal;
+  display: block;
+  width: 130px;
+  border-radius: 2px;
   color: white;
   border: white solid 2px;
   background: transparent;
-  padding: 6px 35px;
-  margin-left: 95px;
+  padding: 6px 0px;
+  margin: 0 auto;
   margin-bottom: 35px;
   cursor: pointer;
 }
@@ -896,7 +899,7 @@ h2 {
   line-height: 21px;
   font-weight: normal;
   display: inline-block;
-  margin-right: 5px;
+  margin-right: 2px;
 }
 
 .about:last-child {
@@ -957,7 +960,7 @@ h2 {
 .status__stars {
   width: inherit;
   height: 20px;
-  margin-bottom: 55px;
+  margin-bottom: 51px;
   background: url("../img/sprite.png") no-repeat -109px -216px;
 }
 
@@ -974,7 +977,10 @@ h2 {
   line-height: 21px;
   font-weight: normal;
   text-align: center;
+  padding-bottom: 2px;
+  margin-bottom: 4px;
   width: 110px;
   margin: 0;
   background-color: #f2f2f2;
+  color: #666;
 }
