@@ -615,14 +615,6 @@ h2 {
   background: url("../img/sprite.png") no-repeat -325px -92px;
 }
 
-.checkboxes-list__label:hover::before {
-  background: url("../img/sprite.png") no-repeat -1145px -215px;
-}
-
-.checkboxes-list__input:checked + .checkboxes-list__label:hover::before {
-  background: url("../img/sprite.png") no-repeat -1089px -215px;
-}
-
 .checkboxes-list__input:checked:disabled + .checkboxes-list__label::before {
   background: url("../img/sprite.png") no-repeat -327px -48px;
 }
