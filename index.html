@@ -99,12 +99,12 @@
           <form action="/echo" method="post">
             <div class="input-data">
               <label class="input-data__label" for="in">ДАТА ЗАЕЗДА:</label>
-              <input class="input-data__input" value="24 АПРЕЛЯ 2016" type="text" id="in">
+              <input class="input-data__input" value="24 АПРЕЛЯ 2016" type="text" id="in" required>
               <div class="input-data__img"></div>
             </div>
             <div class="input-data">
               <label class="input-data__label" for="out">ДАТА ВЫЕЗДА:</label>
-              <input class="input-data__input" value="4 ИЮЛЯ 2016" type="text" id="out">
+              <input class="input-data__input" value="4 ИЮЛЯ 2016" type="text" id="out" required>
               <div class="input-data__img"></div>
             </div>
             <div class="input-data input-data--number">
@@ -123,9 +123,7 @@
           </form>
         </div>
       </div>
-      <div class="map">
-        <img class="map__image" src="img/map.jpg" alt="map" width="1200" height="593">
-      </div>
+      <div class="map"></div>
     </main>
     <footer class="footer">
       <div class="footer-hash">
@@ -148,6 +146,8 @@
       </div>
     </footer>
   </div>
+  <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+  <script src="js/animation.js"></script>
 </body>
 
 </html>
