@@ -8,13 +8,11 @@ if(!popup.classList.contains("input--show"))
 else
   popup.classList.remove("input--show")
 });
-
 function initialize() {
   var mapOptions = {
     zoom: 9,
     center: new google.maps.LatLng(34.8018134,-111.6061398)
   }
-  var map = new google.maps.Map(document.querySelector('.map'),
-                                mapOptions);
+  var map = new google.maps.Map(document.querySelector('.map'), mapOptions);
 }
 google.maps.event.addDomListener(window, 'load', initialize);

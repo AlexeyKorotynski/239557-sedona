@@ -75,10 +75,12 @@
             <div class="cost">
               <h2 class="cost__caption">СТОИМОСТЬ В СУТКИ (Р):</h2>
               <div class="table">
-                <label class="table__cost">ОТ
+                <label class="table__cost">
+                  <span class="table__label">ОТ</span>
                   <input class="table__input" type="text" name="min" value="0">
                 </label>
-                <label class="table__cost">ДО
+                <label class="table__cost">
+                  <span class="table__label">ДО</span>
                   <input class="table__input" type="text" name="max" value="3000">
                 </label>
               </div>
@@ -89,27 +91,29 @@
                 <div class="range__slider"></div>
                 <div class="range__slider"></div>
               </div>
-              <button class="cost__button" type="submit">ПОКАЗАТЬ</button>
+              <a class="cost__button" href="sort.html">ПОКАЗАТЬ</a>
             </div>
           </div>
         </form>
       </div>
       <div class="found">
-        <h2 class="found__caption">НАЙДЕНО: 3</h2>
-        <ul class="found-list">
-          <li class="found-list__item">
-            <p class="found-list__text">СОРТИРОВКА:</p>
-          </li>
-          <li class="found-list__item found-list__item--active">
-            <a class="found-list__link" href="#">ПО ЦЕНЕ</a>
-          </li>
-          <li class="found-list__item">
-            <a class="found-list__link" href="#">ПО ТИПУ</a>
-          </li>
-          <li class="found-list__item">
-            <a class="found-list__link" href="#">ПО РЕЙТИНГУ</a>
-          </li>
-        </ul>
+        <div class="found-block">
+          <h2 class="found__caption">НАЙДЕНО: 3</h2>
+          <ul class="found-list">
+            <li class="found-list__item">
+              <p class="found-list__text">СОРТИРОВКА:</p>
+            </li>
+            <li class="found-list__item found-list__item--active">
+              <a class="found-list__link" href="#">ПО ЦЕНЕ</a>
+            </li>
+            <li class="found-list__item">
+              <a class="found-list__link" href="#">ПО ТИПУ</a>
+            </li>
+            <li class="found-list__item">
+              <a class="found-list__link" href="#">ПО РЕЙТИНГУ</a>
+            </li>
+          </ul>
+        </div>
         <div class="found-arrows">
           <a class="found-arrows__link" href="#"></a>
           <a class="found-arrows__link found-arrows__link--active" href="#"></a>
