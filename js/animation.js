@@ -1,9 +1,12 @@
 var link = document.querySelector(".search-form__link");
 var popup = document.querySelector(".input");
+var input = document.querySelector(".input--show")
 link.addEventListener("click", function(event){
   event.preventDefault();
-
+if(!popup.classList.contains("input--show"))
   popup.classList.add("input--show");
+else
+  popup.classList.remove("input--show")
 });
 
 function initialize() {
