@@ -1098,3 +1098,16 @@ background-color: #f2f2f2;
   line-height: 21px;
   font-weight: normal;
 }
+
+@keyframes op {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.container {
+  animation-name: op;
+  animation-duration: 1s;
+}
